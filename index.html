@@ -1,1 +1,2503 @@
 
+
+
+
+
+Henan Taixinchang Trading Co., Ltd. | One-Stop Water Treatment Chemical Supplier - PAC, PAM, PFS, Activated Carbon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Henan Taixinchang Trading Co., Ltd.",
+  "alternateName": "Taixinchang",
+  "url": "https://www.taixinchang.com",
+  "logo": "https://www.taixinchang.com/logo.png",
+  "description": "Comprehensive one-stop supplier of water treatment chemicals including PAC, PAM, PFS, activated carbon and sodium acetate from Gongyi, China.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Gongyi",
+    "addressRegion": "Henan",
+    "addressCountry": "CN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+86-199-3737-8850",
+    "contactType": "sales",
+    "email": "sales@taixinchang.com",
+    "availableLanguage": ["English", "Chinese"]
+  },
+  "sameAs": []
+}
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Water Treatment Chemicals (PAC, PAM, PFS, Activated Carbon)",
+  "description": "Comprehensive one-stop water treatment chemical solutions including coagulants, flocculants, disinfectants and filter media.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Taixinchang"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Henan Taixinchang Trading Co., Ltd."
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.taixinchang.com/#products",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is your minimum order quantity (MOQ)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our MOQ is 1 ton for powder products (PAC, PAM, PFS). For liquid PAC, the MOQ is 20 tons. We support trial orders and can mix multiple products in one container."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you provide free samples?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide free samples (500g-1kg) for jar testing and quality evaluation. You only need to pay the courier fee (DHL/FedEx, approximately $30-50)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What documents do you provide for customs clearance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide complete documentation: Commercial Invoice, Packing List, Bill of Lading, Certificate of Analysis (COA), Material Safety Data Sheet (MSDS), and Form E (Certificate of Origin for ASEAN-China FTA)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are your payment terms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We accept T/T with 30% deposit and 70% balance against copy of Bill of Lading. For larger orders or established customers, we can accept L/C at sight."
+      }
+    }
+  ]
+}
+
+
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1a2b3c;
+  background: #ffffff;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ===== Color Tokens ===== */
+:root {
+  --primary: #0e4d64;
+  --primary-dark: #0a3a4c;
+  --accent: #00b4d8;
+  --accent-light: #90e0ef;
+  --cta: #e67e22;
+  --cta-hover: #d35400;
+  --bg-light: #f4f8fa;
+  --bg-dark: #0a2a38;
+  --text: #1a2b3c;
+  --text-light: #5a7a8c;
+  --border: #d8e4ea;
+  --white: #ffffff;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary);
+}
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 1rem; }
+h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+p { color: var(--text-light); margin-bottom: 1rem; }
+
+/* ===== Layout ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+section { padding: 80px 0; }
+.section-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+/* ===== Navigation ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-mark svg { width: 20px; height: 20px; fill: white; }
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.nav-links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+.nav-cta {
+  background: var(--primary);
+  color: white !important;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-weight: 600 !important;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--accent); }
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.mobile-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--primary);
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('https://aka.doubaocdn.com/s/3K8bsU9qU1') center/cover no-repeat;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10,42,56,0.92) 0%, rgba(14,77,100,0.75) 50%, rgba(14,77,100,0.6) 100%);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  color: white;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,180,216,0.15);
+  border: 1px solid rgba(0,180,216,0.4);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-light);
+  margin-bottom: 24px;
+}
+.hero h1 {
+  color: white;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+.hero h1 span { color: var(--accent-light); }
+.hero-sub {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 600px;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cta);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover { background: var(--cta-hover); transform: translateY(-2px); }
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid rgba(255,255,255,0.4);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn-outline:hover { border-color: white; background: rgba(255,255,255,0.1); }
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+.stat-item { border-left: 3px solid var(--accent); padding-left: 16px; }
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+}
+.stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+
+/* ===== Wave Divider ===== */
+.wave-divider {
+  position: relative;
+  height: 60px;
+  background: var(--white);
+  margin-top: -60px;
+  z-index: 3;
+}
+.wave-divider svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/* ===== Products Section ===== */
+.products { background: var(--bg-light); }
+.products-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.product-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(14,77,100,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border);
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(14,77,100,0.15);
+}
+.product-img {
+  height: 200px;
+  overflow: hidden;
+  background: var(--bg-light);
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.product-card:hover .product-img img { transform: scale(1.05); }
+.product-body { padding: 24px; }
+.product-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(0,180,216,0.1);
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.product-body h3 { font-size: 1.15rem; margin-bottom: 8px; }
+.product-body p { font-size: 0.9rem; margin-bottom: 0; }
+.product-specs {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.spec-item { font-size: 0.8rem; color: var(--text-light); }
+.spec-item strong { color: var(--primary); }
+
+/* ===== Specifications Section ===== */
+.specs { background: white; }
+.specs-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.spec-tab {
+  padding: 12px 28px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  background: white;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.spec-tab.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+.spec-tab:hover:not(.active) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.spec-content { display: none; }
+.spec-content.active { display: block; }
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(14,77,100,0.08);
+}
+.spec-table th {
+  background: var(--primary);
+  color: white;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.spec-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.spec-table tr:nth-child(even) { background: var(--bg-light); }
+.spec-table tr:hover { background: rgba(0,180,216,0.05); }
+
+/* ===== Applications Section ===== */
+.applications { background: var(--bg-light); }
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+.app-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+}
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(14,77,100,0.12);
+}
+.app-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.app-icon svg { width: 28px; height: 28px; fill: white; }
+.app-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.app-card p { font-size: 0.88rem; margin-bottom: 0; }
+.app-products {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.app-product-tag {
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  background: rgba(0,180,216,0.1);
+  color: var(--accent);
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+/* ===== Packaging Section ===== */
+.packaging { background: white; }
+.pack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+.pack-card {
+  text-align: center;
+  padding: 40px 24px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.pack-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+.pack-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pack-icon svg { width: 40px; height: 40px; fill: white; }
+.pack-card h3 { font-size: 1.2rem; margin-bottom: 12px; }
+.pack-card p { font-size: 0.9rem; margin-bottom: 8px; }
+.pack-detail {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* ===== Certifications Section ===== */
+.certifications { background: var(--bg-light); }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+.cert-card {
+  background: white;
+  padding: 32px 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+}
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(14,77,100,0.12);
+}
+.cert-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cert-icon svg { width: 32px; height: 32px; fill: white; }
+.cert-card h4 { font-size: 1rem; margin-bottom: 8px; font-family: 'Noto Sans', sans-serif; }
+.cert-card p { font-size: 0.82rem; margin-bottom: 0; }
+
+/* ===== FAQ Section ===== */
+.faq { background: white; }
+.faq-list {
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.faq-item:hover { border-color: var(--accent); }
+.faq-question {
+  padding: 20px 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary);
+  background: var(--bg-light);
+}
+.faq-question svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--accent);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+.faq-item.active .faq-question svg { transform: rotate(180deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-item.active .faq-answer { max-height: 300px; }
+.faq-answer-inner {
+  padding: 20px 24px;
+  font-size: 0.92rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ===== Why Us ===== */
+.why-us { background: white; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-top: 50px;
+}
+.why-item {
+  text-align: center;
+  padding: 32px 24px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.why-item:hover { background: var(--bg-light); }
+.why-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why-icon svg { width: 28px; height: 28px; fill: white; }
+.why-item h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.why-item p { font-size: 0.9rem; margin-bottom: 0; }
+
+/* ===== About ===== */
+.about { background: var(--bg-light); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.about-content h2 { margin-bottom: 20px; }
+.about-content p { margin-bottom: 16px; font-size: 0.95rem; }
+.about-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.about-list svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.about-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(14,77,100,0.15);
+}
+.about-image img { width: 100%; height: 400px; object-fit: cover; }
+
+/* ===== Contact ===== */
+.contact { background: var(--bg-dark); color: white; }
+.contact h2 { color: white; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+.contact-info h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+}
+.contact-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(0,180,216,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contact-icon svg { width: 20px; height: 20px; fill: var(--accent); }
+.contact-item h4 { color: white; font-size: 0.95rem; margin-bottom: 4px; font-family: 'Noto Sans', sans-serif; font-weight: 600; }
+.contact-item p { color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 0; }
+.contact-form {
+  background: rgba(255,255,255,0.05);
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 8px;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  color: white;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: rgba(255,255,255,0.4); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.btn-submit {
+  width: 100%;
+  background: var(--cta);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-submit:hover { background: var(--cta-hover); }
+
+/* ===== Footer ===== */
+footer {
+  background: #061a24;
+  color: rgba(255,255,255,0.6);
+  padding: 40px 0 24px;
+  font-size: 0.85rem;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+}
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { transition: color 0.2s; }
+.footer-links a:hover { color: var(--accent); }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .mobile-toggle { display: block; }
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    gap: 16px;
+  }
+  section { padding: 50px 0; }
+  .hero { min-height: auto; padding: 100px 0 60px; }
+  .hero-stats { gap: 24px; margin-top: 40px; }
+  .stat-number { font-size: 1.6rem; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-image img { height: 280px; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .spec-table { font-size: 0.8rem; }
+  .spec-table th, .spec-table td { padding: 8px 10px; }
+}
+
+
+
+
+
+
+  
+
+    
+      
+        
+      
+      Taixinchang
+    
+    
+
+      Products
+      Specs
+      Applications
+      Packaging
+      About
+      FAQ
+      Get Quote
+    
+
+    
+      
+    
+  
+
+
+
+
+
+
+  
+
+
+  
+
+
+  
+
+    
+
+      
+      Comprehensive One-Stop Water Treatment Chemical Supplier Since 2018
+    
+
+    
+Your Trusted One-Stop Partner for Complete Water Treatment Solutions
+
+    
+From coagulants to flocculants, from chemicals to technical support — Henan Taixinchang provides comprehensive one-stop water treatment chemical solutions. Direct supply of PAM, PAC, PFS and 30+ products from China's largest production base. Full-service for Vietnam, Indonesia and Southeast Asia.
+
+    
+
+      
+        Request a Quote
+        
+      
+      View Products
+    
+
+    
+
+      
+
+        
+30+
+
+        
+Product SKUs
+
+      
+
+      
+
+        
+1 Ton
+
+        
+Minimum Order
+
+      
+
+      
+
+        
+7 Days
+
+        
+Delivery Time
+
+      
+
+      
+
+        
+100%
+
+        
+COA per Batch
+
+      
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    
+
+      Our Products
+      
+Complete One-Stop Water Treatment Chemical Range
+
+      
+From coagulants to flocculants, disinfectants to filter media — we supply the full range of chemicals for municipal and industrial water treatment. One-stop sourcing, one supplier, one invoice.
+
+    
+
+    
+
+      
+      
+
+        
+
+          
+        
+
+        
+
+          Best Seller
+          
+Anionic PAM
+
+          
+High molecular weight polyacrylamide for industrial wastewater, mining and drinking water treatment.
+
+          
+
+            MW: 6-25 million
+            MOQ: 1 ton
+          
+
+        
+
+      
+
+      
+      
+
+        
+
+          
+        
+
+        
+
+          MBR Specialist
+          
+Cationic PAM
+
+          
+High ionicity PAM optimized for sludge dewatering in MBR systems and municipal wastewater plants.
+
+          
+
+            Ionicity: 10-80%
+            MOQ: 1 ton
+          
+
+        
+
+      
+
+      
+      
+
+        
+
+          
+        
+
+        
+
+          Special Grade
+          
+Nonionic PAM
+
+          
+Non-ionic polyacrylamide for textile sizing, paper retention aids and special industrial applications.
+
+          
+
+            MW: 6-12 million
+            MOQ: 1 ton
+          
+
+        
+
+      
+
+      
+      
+
+        
+
+          
+        
+
+        
+
+          GB Standard
+          
+PAC Powder
+
+          
+Spray-dried and drum-dried PAC meeting GB15892 standard, for drinking water and wastewater treatment.
+
+          
+
+            Al2O3: 28-31%
+            MOQ: 1 ton
+          
+
+        
+
+      
+
+      
+      
+
+        
+
+          
+        
+
+        
+
+          Ready to Use
+          
+PAC Liquid
+
+          
+Liquid PAC with 10-12% Al2O3 content, ready-to-use for water treatment plants and industrial applications.
+
+          
+
+            Al2O3: 10-12%
+            MOQ: 20 tons
+          
+
+        
+
+      
+
+      
+      
+
+        
+
+          
+        
+
+        
+
+          High Efficiency
+          
+PFS (Polyferric Sulfate)
+
+          
+High-performance coagulant for industrial wastewater with excellent COD and phosphorus removal.
+
+          
+
+            Fe: ≥19%
+            MOQ: 1 ton
+          
+
+        
+
+      
+
+      
+      
+
+        
+
+          
+        
+
+        
+
+          Best Value
+          
+Coal-based Activated Carbon
+
+          
+High-quality coal-based granular and powdered activated carbon for water purification, gold recovery, and gas treatment.
+
+          
+
+            Iodine: 800 / 1000 mg/g
+            MOQ: 1 ton
+          
+
+        
+
+      
+
+      
+      
+
+        
+
+          
+        
+
+        
+
+          Carbon Source
+          
+Sodium Acetate
+
+          
+High-purity industrial grade sodium acetate as carbon source for biological denitrification in wastewater treatment.
+
+          
+
+            Purity: 58-60%
+            MOQ: 1 ton
+          
+
+        
+
+      
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    
+
+      Technical Specifications
+      
+Detailed Product Parameters
+
+      
+All products meet national and international standards. COA (Certificate of Analysis) provided with every shipment.
+
+    
+
+    
+
+      PAC Powder
+      PAC Liquid
+      Anionic PAM
+      Cationic PAM
+      Nonionic PAM
+      PFS
+      Activated Carbon
+      Sodium Acetate
+    
+
+
+    
+    
+
+      
+        
+          
+            Parameter
+            Drinking Water Grade
+            Industrial Grade
+            Test Method
+          
+        
+        
+          Al2O3 Content (%)≥30.0≥28.0GB/T 22627
+          Basicity (%)40-9040-90GB/T 22627
+          Water Insoluble (%)≤0.3≤1.0GB/T 22627
+          pH (1% Solution)3.5-5.03.5-5.0GB/T 22627
+          Iron (Fe) (%)≤0.005—GB/T 22627
+          Arsenic (As) (%)≤0.0001—GB/T 22627
+          Heavy Metals (Pb) (%)≤0.001—GB/T 22627
+          Cadmium (Cd) (%)≤0.0001—GB/T 22627
+          AppearanceYellow / Light Yellow PowderVisual
+          StandardGB 15892-2020 / AWWA B406—
+        
+      
+    
+
+
+    
+    
+
+      
+        
+          
+            Parameter
+            Grade A
+            Grade B
+            Test Method
+          
+        
+        
+          Al2O3 Content (%)≥12.0≥10.0GB/T 22627
+          Basicity (%)40-9040-90GB/T 22627
+          Water Insoluble (%)≤0.2≤0.5GB/T 22627
+          pH (1% Solution)3.5-5.03.5-5.0GB/T 22627
+          Density (20°C, g/cm³)≥1.20≥1.15GB/T 22627
+          AppearanceYellow / Light Yellow LiquidVisual
+          StandardGB 15892-2020—
+        
+      
+    
+
+
+    
+    
+
+      
+        
+          
+            Parameter
+            Specification
+            Test Method
+          
+        
+        
+          Molecular Weight (Million)6, 8, 10, 12, 16, 20, 25GB/T 12005.10
+          Hydrolysis Degree (%)10-35 (customizable)GB/T 12005.6
+          Solid Content (%)≥90.0GB/T 12005.2
+          Dissolution Time (min)≤60GB/T 12005.8
+          Residual Monomer (%)≤0.05 (drinking water grade ≤0.025)GB/T 12005.3
+          pH (1% Solution)6.0-8.0GB/T 12005.7
+          AppearanceWhite / Light Yellow Granular PowderVisual
+          Bulk Density (g/cm³)0.6-0.8—
+          StandardGB/T 17514-2017 / ANSI / NSF—
+        
+      
+    
+
+
+    
+    
+
+      
+        
+          
+            Parameter
+            Specification
+            Test Method
+          
+        
+        
+          Ionicity / Charge Density (%)10, 20, 30, 40, 50, 60, 80Colloid Titration
+          Molecular Weight (Million)6-12 (customizable)GB/T 12005.10
+          Solid Content (%)≥90.0GB/T 12005.2
+          Dissolution Time (min)≤60GB/T 12005.8
+          Residual Monomer (%)≤0.1GB/T 12005.3
+          pH (1% Solution)3.0-6.0GB/T 12005.7
+          AppearanceWhite Granular PowderVisual
+          StandardGB/T 17514-2017—
+        
+      
+    
+
+
+    
+    
+
+      
+        
+          
+            Parameter
+            Specification
+            Test Method
+          
+        
+        
+          Molecular Weight (Million)6, 8, 10, 12GB/T 12005.10
+          Hydrolysis Degree (%)≤5GB/T 12005.6
+          Solid Content (%)≥90.0GB/T 12005.2
+          Dissolution Time (min)≤90GB/T 12005.8
+          Residual Monomer (%)≤0.05GB/T 12005.3
+          pH (1% Solution)6.0-8.0GB/T 12005.7
+          AppearanceWhite Granular PowderVisual
+          StandardGB/T 17514-2017—
+        
+      
+    
+
+
+    
+    
+
+      
+        
+          
+            Parameter
+            Specification
+            Test Method
+          
+        
+        
+          Iron (Fe) Content (%)≥19.0GB/T 14591
+          Basicity (%)8-16GB/T 14591
+          Water Insoluble (%)≤0.5GB/T 14591
+          pH (1% Solution)2.0-3.0GB/T 14591
+          Arsenic (As) (%)≤0.0001GB/T 14591
+          Heavy Metals (Pb) (%)≤0.001GB/T 14591
+          AppearanceYellow / Light Yellow PowderVisual
+          StandardGB/T 14591-2016—
+        
+      
+    
+
+
+    
+    
+
+      
+        
+          
+            Parameter
+            Iodine 800
+            Iodine 1000
+            Test Method
+          
+        
+        
+          Iodine Number (mg/g)≥800≥1000GB/T 7702.7
+          Methylene Blue (mg/g)≥120≥150GB/T 7702.6
+          Moisture (%)≤5≤5GB/T 7702.1
+          Ash Content (%)≤15≤12GB/T 7702.15
+          Bulk Density (g/L)450-550450-550GB/T 7702.2
+          Hardness (%)≥90≥95GB/T 7702.3
+          pH Value7-117-11GB/T 7702.16
+          Particle Size8x30 mesh, 200 mesh powder, customizable—
+          AppearanceBlack Granular / PowderVisual
+          StandardGB/T 7701.2 / AWWA B604—
+        
+      
+    
+
+
+    
+    
+
+      
+        
+          
+            Parameter
+            Industrial Grade
+            Test Method
+          
+        
+        
+          Sodium Acetate Content (%)≥58-60HG/T 2031
+          Moisture (%)≤2.0HG/T 2031
+          Water Insoluble (%)≤0.1HG/T 2031
+          Chloride (Cl) (%)≤0.2HG/T 2031
+          Sulfate (SO4) (%)≤0.05HG/T 2031
+          Iron (Fe) (%)≤0.005HG/T 2031
+          pH (5% Solution)7.5-9.0HG/T 2031
+          AppearanceWhite / Colorless Crystalline PowderVisual
+          StandardHG/T 2031-2008—
+        
+      
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    
+
+      Applications
+      
+Industries We Serve
+
+      
+Our chemicals are used across a wide range of industries for water purification, wastewater treatment, and process optimization.
+
+    
+
+    
+
+      
+
+        
+
+          
+        
+
+        
+Drinking Water Treatment
+
+        
+Municipal water supply plants, drinking water purification, and potable water treatment facilities.
+
+        
+
+          PAC
+          Anionic PAM
+          Activated Carbon
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Municipal Wastewater
+
+        
+Urban sewage treatment plants, MBR systems, sludge dewatering, and biological treatment.
+
+        
+
+          PAC
+          Cationic PAM
+          PFS
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Industrial Wastewater
+
+        
+Textile, dyeing, printing, leather, food & beverage, pharmaceutical, and chemical manufacturing.
+
+        
+
+          PAC
+          PAM
+          PFS
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Mining & Mineral Processing
+
+        
+Coal washing, mineral flotation, tailings treatment, and process water recycling in mining operations.
+
+        
+
+          Anionic PAM
+          PAC
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Oil & Gas
+
+        
+Drilling fluids, enhanced oil recovery, produced water treatment, and fracturing fluid additives.
+
+        
+
+          Anionic PAM
+          Cationic PAM
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Paper & Pulp
+
+        
+Retention aids, drainage improvement, dry strength enhancement, and white water treatment in paper mills.
+
+        
+
+          Cationic PAM
+          Anionic PAM
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Textile & Dyeing
+
+        
+Color removal, COD reduction, sludge dewatering, and water recycling in textile and dyeing mills.
+
+        
+
+          PAC
+          PFS
+          Cationic PAM
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Agriculture & Aquaculture
+
+        
+Aquaculture water treatment, irrigation water purification, soil conditioning, and agricultural runoff treatment.
+
+        
+
+          PAC
+          Anionic PAM
+        
+
+      
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    
+
+      Packaging & Shipping
+      
+Flexible Packaging Options
+
+      
+We offer various packaging solutions to meet your logistics requirements. Custom packaging and neutral labeling available.
+
+    
+
+    
+
+      
+
+        
+
+          
+        
+
+        
+25kg Kraft Paper Bag
+
+        
+Standard packaging for powder products
+
+        
+
+          Material: 3-layer kraft paper + PE inner liner
+
+          Loading: 40 bags/pallet, 20 pallets/20'FCL
+
+          Net Weight: 25kg ± 0.2kg
+
+          Custom Label: Available
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+1000kg Jumbo Bag
+
+        
+Bulk packaging for large volume orders
+
+        
+
+          Material: PP woven with PE liner
+
+          Loading: 1 ton/bag, 20 bags/20'FCL
+
+          Net Weight: 1000kg ± 5kg
+
+          Safety Factor: 5:1 / 6:1
+        
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+IBC Tank / Drum
+
+        
+For liquid PAC and PAM solutions
+
+        
+
+          IBC Tank: 1000L HDPE with steel frame
+
+          Plastic Drum: 25L / 30L / 200L
+
+          Loading: 18 IBC/20'FCL
+
+          Custom: Available upon request
+        
+
+      
+
+    
+
+    
+
+      
+Shipping Information
+
+      
+Loading Port: Qingdao / Shanghai / Lianyungang, China
+
+      
+Destination Ports: Ho Chi Minh, Haiphong (Vietnam) | Jakarta, Surabaya (Indonesia)
+
+      
+Delivery Time: 7-15 days after deposit receipt
+
+      
+Documents Provided: Commercial Invoice, Packing List, Bill of Lading, COA, MSDS, Form E (Certificate of Origin)
+
+      
+Payment Terms: T/T (30% deposit, 70% against B/L copy), L/C at sight
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    
+
+      Certifications
+      
+Quality & Compliance
+
+      
+Our products meet international quality standards and come with complete documentation for customs clearance.
+
+    
+
+    
+
+      
+
+        
+
+          
+        
+
+        
+ISO 9001:2015
+
+        
+Quality Management System certified
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+GB 15892-2020
+
+        
+China National Standard for PAC (drinking water grade)
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+GB/T 17514-2017
+
+        
+China National Standard for PAM (water treatment grade)
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Form E Certificate
+
+        
+ASEAN-China Free Trade Area preferential certificate of origin
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+COA per Batch
+
+        
+Certificate of Analysis provided with every shipment
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+MSDS Available
+
+        
+Material Safety Data Sheet in English, Vietnamese, Indonesian
+
+      
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    
+
+      Why Choose Us
+      
+Your One-Stop Partner for Water Treatment Chemicals
+
+      
+We are not just a chemical supplier — we are your comprehensive one-stop partner. From product selection to technical support, from packaging to customs documentation, we handle everything so you can focus on your business.
+
+    
+
+    
+
+      
+
+        
+
+          
+        
+
+        
+One-Stop Supply
+
+        
+30+ products from coagulants to disinfectants. Mix all products in one container, one supplier, one invoice — reduce your sourcing cost and simplify logistics.
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Direct from Production Base
+
+        
+Located in Gongyi, China's largest water treatment chemical hub. Three production bases ensure stable supply and factory-direct pricing with no middlemen.
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Quality Guaranteed
+
+        
+COA with every shipment, ISO-certified production, free samples for jar testing. We stand behind every batch and offer quality dispute resolution.
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Full Technical Support
+
+        
+Product selection guidance, jar testing, dosage optimization, and process troubleshooting. Our R&D team helps you find the right solution for your water.
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Complete Documentation
+
+        
+Commercial Invoice, Packing List, B/L, COA, MSDS, Form E — all customs clearance documents prepared professionally for Vietnam and Indonesia import.
+
+      
+
+      
+
+        
+
+          
+        
+
+        
+Fast Response & Delivery
+
+        
+Email response within 2 hours. 7-15 days delivery from stock. Flexible payment terms and reliable shipping to all Southeast Asian ports.
+
+      
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    
+
+      
+
+        About Us
+        
+Your Comprehensive One-Stop Water Treatment Partner
+
+        
+Henan Taixinchang Trading Co., Ltd. is a comprehensive one-stop supplier of water treatment chemicals, based in Gongyi — China's largest production base for water treatment materials. We are not just a trading company — we are your full-service partner for all water treatment chemical needs.
+
+        
+With three production bases in Xinxiang, Gongyi and Yixing, and an independent R&D center in partnership with Beijing University of Chemical Technology, we provide complete chemical solutions — from product selection and technical support to packaging, documentation and logistics. One supplier, one invoice, one-stop service for municipal water, industrial wastewater and EPC projects across Southeast Asia.
+
+        
+
+          
+
+            
+            Comprehensive one-stop supply: 30+ water treatment chemicals
+          
+
+          
+
+            
+            Three production bases: Xinxiang, Gongyi, Yixing
+          
+
+          
+
+            
+            Full technical support: product selection, jar testing, dosage optimization
+          
+
+          
+
+            
+            Complete documentation: COA, MSDS, Form E, all customs clearance papers
+          
+
+          
+
+            
+            Custom packaging and neutral labeling available
+          
+
+          
+
+            
+            Factory inspection and video verification supported
+          
+
+        
+
+      
+
+      
+
+        
+      
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    
+
+      FAQ
+      
+Frequently Asked Questions
+
+      
+Common questions from buyers in Vietnam, Indonesia and Southeast Asia.
+
+    
+
+    
+
+      
+
+        
+
+          What is your minimum order quantity (MOQ)?
+          
+        
+
+        
+
+          
+
+            Our MOQ is 1 ton for powder products (PAC, PAM, PFS). For liquid PAC, the MOQ is 20 tons (one IBC tank or full container). We support trial orders and can mix multiple products in one container to help you test the market.
+          
+
+        
+
+      
+
+      
+
+        
+
+          Can you provide free samples?
+          
+        
+
+        
+
+          
+
+            Yes, we provide free samples (500g-1kg) for jar testing and quality evaluation. You only need to pay the courier fee (DHL/FedEx, approximately $30-50). Samples are typically shipped within 2-3 working days after confirmation.
+          
+
+        
+
+      
+
+      
+
+        
+
+          What documents do you provide for customs clearance?
+          
+        
+
+        
+
+          
+
+            We provide complete documentation for customs clearance: Commercial Invoice, Packing List, Bill of Lading, Certificate of Analysis (COA), Material Safety Data Sheet (MSDS), and Form E (Certificate of Origin for ASEAN-China FTA preferential tariff). All documents are prepared according to your country's import requirements.
+          
+
+        
+
+      
+
+      
+
+        
+
+          What are your payment terms?
+          
+        
+
+        
+
+          
+
+            We accept T/T (Telegraphic Transfer) with 30% deposit and 70% balance against copy of Bill of Lading. For larger orders or established customers, we can accept L/C at sight. We do not accept PayPal or Western Union for bulk orders due to amount limitations.
+          
+
+        
+
+      
+
+      
+
+        
+
+          How long is the delivery time?
+          
+        
+
+        
+
+          
+
+            For standard products in stock, delivery is 7-10 days after receiving deposit. For customized specifications or large orders (above 50 tons), delivery is 10-15 days. Shipping time to Vietnam: 3-5 days; to Indonesia: 7-10 days. Total lead time from order to destination port: approximately 2-3 weeks.
+          
+
+        
+
+      
+
+      
+
+        
+
+          Can you customize packaging with our brand label?
+          
+        
+
+        
+
+          
+
+            Yes, we offer OEM/ODM services. We can print your company name, logo, and contact information on the packaging (25kg bags or jumbo bags). Neutral packaging (without any brand information) is also available for trading companies. Custom packaging requires a minimum order of 5 tons and a one-time plate fee of $50-100.
+          
+
+        
+
+      
+
+      
+
+        
+
+          Do you provide technical support for product selection?
+          
+        
+
+        
+
+          
+
+            Yes, our technical team can help you select the right product grade based on your water quality and treatment process. We can recommend specific PAM molecular weight, ionicity, or PAC basicity based on your wastewater characteristics. For complex applications, we can conduct jar tests with your water samples to determine the optimal dosage and product type.
+          
+
+        
+
+      
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+    Get In Touch
+    
+Start Your One-Stop Water Treatment Sourcing Today
+
+    
+Tell us your water treatment needs and we'll respond within 2 hours with complete solution — product recommendation, pricing, technical support, and all documentation.
+
+    
+
+      
+
+        
+Contact Information
+
+        
+
+          
+
+            
+          
+
+          
+
+            
+Email
+
+            
+sales@taixinchang.com
+
+          
+
+        
+
+        
+
+          
+
+            
+          
+
+          
+
+            
+WhatsApp / Phone
+
+            
++86 199 3737 8850
+
+          
+
+        
+
+        
+
+          
+
+            
+          
+
+          
+
+            
+Address
+
+            
+Gongyi City, Henan Province, China
+
+          
+
+        
+
+        
+
+          
+
+            
+          
+
+          
+
+            
+Business Hours
+
+            
+Mon - Sat: 8:30 - 18:00 (GMT+8)
+
+          
+
+        
+
+      
+
+      
+
+        
+          
+
+            
+
+              Your Name *
+              
+            
+
+            
+
+              Company
+              
+            
+
+          
+
+          
+
+            
+
+              Email *
+              
+            
+
+            
+
+              Country
+              
+            
+
+          
+
+          
+
+            Product of Interest
+            
+              Select a product
+              PAC Powder (28% / 30%)
+              PAC Liquid
+              Anionic PAM
+              Cationic PAM (20%-60%)
+              Nonionic PAM
+              PFS (Polyferric Sulfate)
+              Coal-based Activated Carbon
+              Sodium Acetate
+              Multiple Products / Mixed Container
+              Other
+            
+          
+
+          
+
+            Message *
+            
+          
+
+          Send Inquiry
+        
+      
+
+    
+
+  
+
+
+
+
+
+
+  
+
+    
+Henan Taixinchang Trading Co., Ltd.
+
+    
+
+      Products
+      Specs
+      Applications
+      About
+      Contact
+    
+
+    
+© 2026 Taixinchang. All rights reserved.
+
+  
+
+
+
+
+// Mobile menu toggle
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('active');
+}
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.getElementById('navLinks').classList.remove('active');
+  });
+});
+
+// Specification tabs
+function switchSpec(tabId) {
+  document.querySelectorAll('.spec-tab').forEach(function(tab) {
+    tab.classList.remove('active');
+  });
+  document.querySelectorAll('.spec-content').forEach(function(content) {
+    content.classList.remove('active');
+  });
+  event.target.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+
+// FAQ toggle
+function toggleFaq(element) {
+  var faqItem = element.parentElement;
+  faqItem.classList.toggle('active');
+}
+
+// Form submission
+function handleSubmit(e) {
+  e.preventDefault();
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var product = document.getElementById('product').value;
+  var message = document.getElementById('message').value;
+  
+  // Build mailto link
+  var subject = encodeURIComponent('Inquiry from ' + name + ' - ' + (product || 'Water Treatment Chemicals'));
+  var body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Company: ' + document.getElementById('company').value + '\n' +
+    'Email: ' + email + '\n' +
+    'Country: ' + document.getElementById('country').value + '\n' +
+    'Product: ' + product + '\n\n' +
+    'Message:\n' + message
+  );
+  window.location.href = 'mailto:sales@taixinchang.com?subject=' + subject + '&body=' + body;
+}
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('nav');
+  if (window.scrollY > 50) {
+    nav.style.boxShadow = '0 2px 20px rgba(14,77,100,0.1)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+});
+
+
+
+
