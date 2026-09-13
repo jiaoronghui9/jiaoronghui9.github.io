@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f8fa"/>
+      <stop offset="1" stop-color="#dbeaf1"/>
+    </linearGradient>
+    <linearGradient id="tank" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c9e0ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- factory silhouettes -->
+  <path d="M60 330 V210 l60 40 V210 l60 40 V210 l60 40 V330 Z" fill="#9fc2d1" opacity="0.7"/>
+  <rect x="80" y="180" width="14" height="40" fill="#9fc2d1"/>
+  <rect x="200" y="170" width="14" height="50" fill="#9fc2d1"/>
+  <circle cx="87" cy="168" r="9" fill="#c3dbe6" opacity="0.8"/>
+  <circle cx="207" cy="158" r="11" fill="#c3dbe6" opacity="0.8"/>
+  <!-- silos -->
+  <rect x="560" y="200" width="70" height="130" rx="8" fill="url(#tank)" stroke="#8fb9ca" stroke-width="2"/>
+  <path d="M560 200 Q595 170 630 200 Z" fill="#0e4d64" opacity="0.85"/>
+  <rect x="660" y="230" width="55" height="100" rx="8" fill="url(#tank)" stroke="#8fb9ca" stroke-width="2"/>
+  <path d="M660 230 Q687 205 715 230 Z" fill="#00b4d8" opacity="0.7"/>
+  <!-- plant floor -->
+  <rect x="40" y="330" width="720" height="14" rx="4" fill="#0e4d64" opacity="0.25"/>
+  <!-- water treatment basins -->
+  <rect x="300" y="290" width="180" height="44" rx="6" fill="#90e0ef" opacity="0.55" stroke="#0e4d64" stroke-width="2"/>
+  <rect x="330" y="250" width="120" height="40" rx="6" fill="#00b4d8" opacity="0.4" stroke="#0e4d64" stroke-width="2"/>
+  <path d="M310 312 q12 -8 24 0 t24 0 t24 0 t24 0 t24 0 t24 0" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.7"/>
+  <!-- worker dots -->
+  <circle cx="180" cy="318" r="7" fill="#e67e22"/><rect x="175" y="325" width="10" height="14" rx="4" fill="#0e4d64"/>
+  <circle cx="520" cy="318" r="7" fill="#e67e22"/><rect x="515" y="325" width="10" height="14" rx="4" fill="#0e4d64"/>
+  <text x="400" y="410" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0e4d64" text-anchor="middle" letter-spacing="4">GONGYI · HENAN · CHINA</text>
+</svg>
