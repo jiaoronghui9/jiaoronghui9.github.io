@@ -4,4 +4,4 @@ Disallow: /tmp/
 Disallow: /private/
 
 # Sitemap
-Sitemap: https://www.taixinchang.com/sitemap.xml
+Sitemap: https://taixinchang.com/sitemap.xml
