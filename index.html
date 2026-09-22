@@ -11,7 +11,7 @@
 <meta name="google-site-verification" content="UPYlYq8oo-UXq80J-cEI3j82ZkbfGTGLD" />
 <meta name="language" content="English">
 <meta name="revisit-after" content="7 days">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://miaoda.feishu.cn; font-src https://miaoda.feishu.cn; script-src 'self' 'unsafe-inline' https://www.clarity.ms; connect-src 'self' https://www.clarity.ms https://*.clarity.ms wss://*.clarity.ms; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://miaoda.feishu.cn; font-src https://miaoda.feishu.cn; script-src 'self' 'unsafe-inline' https://www.clarity.ms; connect-src 'self' https://www.clarity.ms https://*.clarity.ms wss://*.clarity.ms; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co">
 
 <!-- Open Graph / Social Media -->
 <meta property="og:type" content="website">
@@ -20,17 +20,20 @@
 <meta property="og:url" content="https://taixinchang.com">
 <meta property="og:site_name" content="Taixinchang Water Treatment Chemicals">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://taixinchang.com/images/hero.svg">
+<meta property="og:image" content="https://taixinchang.com/images/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Taixinchang - One-Stop Water Treatment Chemical Supplier">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="One-Stop Water Treatment Chemical Supplier - PAC, PAM, PFS">
 <meta name="twitter:description" content="Direct factory supply of PAC, PAM, PFS, Activated Carbon from Gongyi, China. MOQ 1 ton, free samples, COA per batch.">
-<meta name="twitter:image" content="https://taixinchang.com/images/hero.svg">
+<meta name="twitter:image" content="https://taixinchang.com/images/og-cover.jpg">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="https://taixinchang.com">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
@@ -62,24 +65,20 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Water Treatment Chemicals (PAC, PAM, PFS, Activated Carbon)",
-  "description": "Comprehensive one-stop water treatment chemical solutions including coagulants, flocculants, disinfectants and filter media.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Taixinchang"
-  },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "Henan Taixinchang Trading Co., Ltd."
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://taixinchang.com/#products",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "itemCondition": "https://schema.org/NewCondition"
-  }
+  "@type": "ItemList",
+  "name": "Water Treatment Chemicals Product Range",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Anionic Polyacrylamide (PAM)", "url": "https://taixinchang.com/anionic-polyacrylamide.html" },
+    { "@type": "ListItem", "position": 2, "name": "Cationic Polyacrylamide (PAM)", "url": "https://taixinchang.com/cationic-polyacrylamide.html" },
+    { "@type": "ListItem", "position": 3, "name": "Nonionic Polyacrylamide (PAM)", "url": "https://taixinchang.com/nonionic-polyacrylamide.html" },
+    { "@type": "ListItem", "position": 4, "name": "PAC Powder (Polyaluminum Chloride)", "url": "https://taixinchang.com/polyaluminum-chloride-powder.html" },
+    { "@type": "ListItem", "position": 5, "name": "PAC Liquid (Polyaluminum Chloride)", "url": "https://taixinchang.com/polyaluminum-chloride-liquid.html" },
+    { "@type": "ListItem", "position": 6, "name": "PFS (Polyferric Sulfate)", "url": "https://taixinchang.com/polyferric-sulfate.html" },
+    { "@type": "ListItem", "position": 7, "name": "Coal-based Activated Carbon", "url": "https://taixinchang.com/coal-based-activated-carbon.html" },
+    { "@type": "ListItem", "position": 8, "name": "Sodium Acetate", "url": "https://taixinchang.com/sodium-acetate.html" },
+    { "@type": "ListItem", "position": 9, "name": "PAFC (Poly Aluminum Ferric Chloride)", "url": "https://taixinchang.com/poly-aluminum-ferric-chloride.html" },
+    { "@type": "ListItem", "position": 10, "name": "Sodium Hypochlorite", "url": "https://taixinchang.com/sodium-hypochlorite.html" }
+  ]
 }
 </script>
 
@@ -117,7 +116,31 @@
       "name": "What are your payment terms?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We accept T/T with 30% deposit and 70% balance against copy of Bill of Lading. For larger orders or established customers, we can accept L/C at sight."
+        "text": "We accept T/T (Telegraphic Transfer) with 30% deposit and 70% balance against copy of Bill of Lading. For larger orders or established customers, we can accept L/C at sight."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is the delivery time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For standard products in stock, delivery is 7-10 days after receiving deposit. For customized specifications or large orders (above 50 tons), delivery is 10-15 days. Shipping time to Vietnam: 3-5 days; to Indonesia: 7-10 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you customize packaging with our brand label?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer OEM/ODM services. We can print your company name, logo, and contact information on the packaging. Neutral packaging is also available for trading companies. Custom packaging requires a minimum order of 5 tons and a one-time plate fee of $50-100."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide technical support for product selection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our technical team can help you select the right product grade based on your water quality and treatment process. We can recommend specific PAM molecular weight, ionicity, or PAC basicity based on your wastewater characteristics, and conduct jar tests with your water samples for complex applications."
       }
     }
   ]
@@ -273,7 +296,7 @@ nav {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(10,58,76,0.72), rgba(14,77,100,0.45)), url('/images/hero.svg') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(10,58,76,0.72), rgba(14,77,100,0.45)), url('images/hero.svg') center/cover no-repeat;
   z-index: 0;
 }
 .hero-overlay {
@@ -873,6 +896,33 @@ footer {
   .spec-table { font-size: 0.8rem; }
   .spec-table th, .spec-table td { padding: 8px 10px; }
 }
+
+/* ===== WhatsApp float & inline links (0922 optimization) ===== */
+.product-body h3 a { color: inherit; transition: color 0.2s; }
+.product-body h3 a:hover { color: var(--accent); }
+.contact-item a { color: var(--accent-light); transition: color 0.2s; }
+.contact-item a:hover { color: white; text-decoration: underline; }
+.wa-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+  z-index: 1200;
+  transition: transform 0.2s;
+}
+.wa-float:hover { transform: scale(1.08); }
+.wa-float svg { width: 32px; height: 32px; fill: #ffffff; }
+@media (max-width: 768px) {
+  .wa-float { width: 54px; height: 54px; right: 16px; bottom: 16px; }
+  .wa-float svg { width: 28px; height: 28px; }
+}
 </style>
 <!-- Microsoft Clarity analytics -->
 <script type="text/javascript">
@@ -960,11 +1010,11 @@ footer {
       <!-- PAM Anionic -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/pam.svg" alt="Anionic Polyacrylamide PAM">
+          <img loading="lazy" src="images/pam.svg" alt="Anionic Polyacrylamide PAM">
         </div>
         <div class="product-body">
           <span class="product-tag">Best Seller</span>
-          <h3>Anionic PAM</h3>
+          <h3><a href="anionic-polyacrylamide.html">Anionic PAM</a></h3>
           <p>High molecular weight polyacrylamide for industrial wastewater, mining and drinking water treatment.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>MW:</strong> 6-25 million</span>
@@ -975,11 +1025,11 @@ footer {
       <!-- PAM Cationic -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/pam.svg" alt="Cationic Polyacrylamide PAM">
+          <img loading="lazy" src="images/pam.svg" alt="Cationic Polyacrylamide PAM">
         </div>
         <div class="product-body">
           <span class="product-tag">MBR Specialist</span>
-          <h3>Cationic PAM</h3>
+          <h3><a href="cationic-polyacrylamide.html">Cationic PAM</a></h3>
           <p>High ionicity PAM optimized for sludge dewatering in MBR systems and municipal wastewater plants.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>Ionicity:</strong> 10-80%</span>
@@ -990,11 +1040,11 @@ footer {
       <!-- PAM Nonionic -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/pam.svg" alt="Nonionic Polyacrylamide PAM">
+          <img loading="lazy" src="images/pam.svg" alt="Nonionic Polyacrylamide PAM">
         </div>
         <div class="product-body">
           <span class="product-tag">Special Grade</span>
-          <h3>Nonionic PAM</h3>
+          <h3><a href="nonionic-polyacrylamide.html">Nonionic PAM</a></h3>
           <p>Non-ionic polyacrylamide for textile sizing, paper retention aids and special industrial applications.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>MW:</strong> 6-12 million</span>
@@ -1005,11 +1055,11 @@ footer {
       <!-- PAC Powder -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/pac.svg" alt="Polyaluminum Chloride PAC Powder">
+          <img loading="lazy" src="images/pac.svg" alt="Polyaluminum Chloride PAC Powder">
         </div>
         <div class="product-body">
           <span class="product-tag">GB Standard</span>
-          <h3>PAC Powder</h3>
+          <h3><a href="polyaluminum-chloride-powder.html">PAC Powder</a></h3>
           <p>Spray-dried and drum-dried PAC meeting GB15892 standard, for drinking water and wastewater treatment.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>Al2O3:</strong> 28-31%</span>
@@ -1020,11 +1070,11 @@ footer {
       <!-- PAC Liquid -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/pacliquid.svg" alt="Liquid Polyaluminum Chloride PAC">
+          <img loading="lazy" src="images/pacliquid.svg" alt="Liquid Polyaluminum Chloride PAC">
         </div>
         <div class="product-body">
           <span class="product-tag">Ready to Use</span>
-          <h3>PAC Liquid</h3>
+          <h3><a href="polyaluminum-chloride-liquid.html">PAC Liquid</a></h3>
           <p>Liquid PAC with 10-12% Al2O3 content, ready-to-use for water treatment plants and industrial applications.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>Al2O3:</strong> 10-12%</span>
@@ -1035,11 +1085,11 @@ footer {
       <!-- PFS -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/pfs.svg" alt="Polyferric Sulfate PFS Powder">
+          <img loading="lazy" src="images/pfs.svg" alt="Polyferric Sulfate PFS Powder">
         </div>
         <div class="product-body">
           <span class="product-tag">High Efficiency</span>
-          <h3>PFS (Polyferric Sulfate)</h3>
+          <h3><a href="polyferric-sulfate.html">PFS (Polyferric Sulfate)</a></h3>
           <p>High-performance coagulant for industrial wastewater with excellent COD and phosphorus removal.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>Fe:</strong> ≥19%</span>
@@ -1050,11 +1100,11 @@ footer {
       <!-- Coal-based Activated Carbon -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/carbon.svg" alt="Coal-based Activated Carbon Granules">
+          <img loading="lazy" src="images/carbon.svg" alt="Coal-based Activated Carbon Granules">
         </div>
         <div class="product-body">
           <span class="product-tag">Best Value</span>
-          <h3>Coal-based Activated Carbon</h3>
+          <h3><a href="coal-based-activated-carbon.html">Coal-based Activated Carbon</a></h3>
           <p>High-quality coal-based granular and powdered activated carbon for water purification, gold recovery, and gas treatment.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>Iodine:</strong> 800 / 1000 mg/g</span>
@@ -1065,11 +1115,11 @@ footer {
       <!-- Sodium Acetate -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/acetate.svg" alt="Sodium Acetate Crystals">
+          <img loading="lazy" src="images/acetate.svg" alt="Sodium Acetate Crystals">
         </div>
         <div class="product-body">
           <span class="product-tag">Carbon Source</span>
-          <h3>Sodium Acetate</h3>
+          <h3><a href="sodium-acetate.html">Sodium Acetate</a></h3>
           <p>High-purity industrial grade sodium acetate as carbon source for biological denitrification in wastewater treatment.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>Purity:</strong> 58-60%</span>
@@ -1080,11 +1130,11 @@ footer {
       <!-- PAFC -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/pafc.svg" alt="PAFC Composite Poly Aluminum Ferric Chloride">
+          <img loading="lazy" src="images/pafc.svg" alt="PAFC Composite Poly Aluminum Ferric Chloride">
         </div>
         <div class="product-body">
           <span class="product-tag">Composite Coagulant</span>
-          <h3>PAFC (Poly Aluminum Ferric Chloride)</h3>
+          <h3><a href="poly-aluminum-ferric-chloride.html">PAFC (Poly Aluminum Ferric Chloride)</a></h3>
           <p>Composite coagulant combining aluminum and iron salts — broader flocculation range, strong charge neutralization for high-turbidity water.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>Al2O3+Fe:</strong> ≥18%</span>
@@ -1095,11 +1145,11 @@ footer {
       <!-- Sodium Hypochlorite -->
       <div class="product-card">
         <div class="product-img">
-          <img src="/images/hypochlorite.svg" alt="Sodium Hypochlorite Solution">
+          <img loading="lazy" src="images/hypochlorite.svg" alt="Sodium Hypochlorite Solution">
         </div>
         <div class="product-body">
           <span class="product-tag">Disinfectant</span>
-          <h3>Sodium Hypochlorite</h3>
+          <h3><a href="sodium-hypochlorite.html">Sodium Hypochlorite</a></h3>
           <p>Broad-spectrum disinfectant for drinking water, swimming pools and wastewater treatment. Effective sterilization and deodorization.</p>
           <div class="product-specs">
             <span class="spec-item"><strong>NaOCl:</strong> ≥10%</span>
@@ -1640,7 +1690,7 @@ footer {
         </ul>
       </div>
       <div class="about-image">
-        <img src="/images/hero.svg" alt="Taixinchang water treatment chemical production facility">
+        <img loading="lazy" src="images/hero.svg" alt="Taixinchang water treatment chemical production facility">
       </div>
     </div>
   </div>
@@ -1759,8 +1809,9 @@ footer {
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
           </div>
           <div>
-            <h4>Phone / WeChat</h4>
-            <p>+86 199 3737 8850</p>
+            <h4>Phone / WeChat / WhatsApp</h4>
+            <p><a href="tel:+8619937378850">+86 199 3737 8850</a></p>
+            <p style="margin-top: 4px;"><a href="https://wa.me/8619937378850?text=Hello%2C%20I%27m%20interested%20in%20your%20water%20treatment%20chemicals%20(PAM%2FPAC)." target="_blank" rel="noopener">WhatsApp: click to chat &rarr;</a></p>
           </div>
         </div>
         <div class="contact-item">
@@ -1783,7 +1834,12 @@ footer {
         </div>
       </div>
       <div class="contact-form">
-        <form onsubmit="handleSubmit(event)">
+        <form action="https://formsubmit.co/sales@taixinchang.com" method="POST">
+          <input type="hidden" name="_subject" value="New Website Inquiry - taixinchang.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://taixinchang.com/thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name *</label>
@@ -1848,6 +1904,11 @@ footer {
   </div>
 </footer>
 
+<!-- WhatsApp floating button -->
+<a class="wa-float" href="https://wa.me/8619937378850?text=Hello%2C%20I%27m%20interested%20in%20your%20water%20treatment%20chemicals%20(PAM%2FPAC)." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+</a>
+
 <script>
 // Mobile menu toggle
 function toggleMenu() {
@@ -1885,27 +1946,7 @@ document.querySelectorAll('.email-obf').forEach(function(el) {
   el.textContent = addr;
 });
 
-// Form submission
-function handleSubmit(e) {
-  e.preventDefault();
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var product = document.getElementById('product').value;
-  var message = document.getElementById('message').value;
-  
-  // Build mailto link
-  var subject = encodeURIComponent('Inquiry from ' + name + ' - ' + (product || 'Water Treatment Chemicals'));
-  var body = encodeURIComponent(
-    'Name: ' + name + '\n' +
-    'Company: ' + document.getElementById('company').value + '\n' +
-    'Email: ' + email + '\n' +
-    'Country: ' + document.getElementById('country').value + '\n' +
-    'Product: ' + product + '\n\n' +
-    'Message:\n' + message
-  );
-  var salesEmail = 'sales' + '@' + 'taixinchang' + '.com';
-  window.location.href = 'mailto:' + salesEmail + '?subject=' + subject + '&body=' + body;
-}
+// Form is submitted via FormSubmit (server-side handler) — see form action attribute.
 
 // Navbar scroll effect
 window.addEventListener('scroll', function() {
