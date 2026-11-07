@@ -77,9 +77,27 @@ These are broad envelopes compiled across the two suppliers' descriptive text an
 - Existing form action, destination mailbox and WhatsApp number.
 - Original supplier source files.
 
-## 7. Remaining checks before total acceptance
+## 7. Static QA results (2026-11-07)
 
-- Inspect rendered desktop/mobile pages in a browser.
-- Check all six inquiry forms and their field content.
-- Check internal links and SEO metadata against the six-page scope.
-- Complete the P0 live form delivery test separately; source-code inspection does not prove Zoho receipt.
+The following source-code checks were completed on the candidate branch after the parameter revisions:
+
+- Six reviewed pages have balanced common HTML tags; section and div pairs are balanced.
+- All local `href` and `src` references on the six pages resolve to files in the candidate branch; no broken local file references were found.
+- All in-page anchor links resolve to an existing ID; no duplicate IDs were found.
+- Each reviewed page has one H1, a title, meta description, canonical URL, Open Graph URL/image and viewport declaration.
+- All JSON-LD blocks on the six pages parse as valid JSON.
+- All visible images on the homepage have alt text; the shared Open Graph image exists in the branch.
+- All six forms use POST to the configured FormSubmit endpoint, include required name/email/message fields, include a full HTTPS `_next` URL to `thank-you.html`, and contain a CSS-hidden honeypot.
+- All six form product dropdowns now label PAC solid as `PAC Solid (Al₂O₃ 20–30%)`; the unsupported `Cationic PAM (20%-60%)` label was removed.
+- The homepage's `#packaging` link now points to an element with `id="packaging"`.
+- The unverified two-hour response promise was removed from the thank-you page; the page remains `noindex, nofollow`.
+- Sitemap `lastmod` values for the six revised public pages were refreshed to `2026-11-07`; all sitemap URLs map to existing HTML pages.
+- No GitHub Actions workflow runs or commit status checks were returned for this candidate commit; no automated CI result is available.
+
+## 8. Remaining acceptance tests
+
+1. **Rendered desktop/mobile test:** not yet completed. The candidate branch is not deployed to the production GitHub Pages site, and source inspection is not a substitute for browser rendering. Do not change the Pages deployment branch just to preview this candidate.
+2. **Live form delivery test:** not yet completed. The HTML is wired correctly, but no real POST has been sent and no delivery to Zoho has been verified.
+3. **FormSubmit activation:** its official documentation says the first submission triggers an activation email to the configured recipient; submissions are held until the recipient confirms the form. Check whether `sales@taixinchang.com` has already activated this endpoint before the live test.
+4. **Spam control:** the six forms currently include `_captcha=false`. FormSubmit's documentation strongly recommends keeping reCAPTCHA enabled to avoid technical limitations and bot submissions. This setting is left unchanged pending an explicit business decision because enabling it changes the visitor experience.
+5. **External font dependency:** pages load Playfair Display and Noto Sans from `miaoda.feishu.cn`. The host's availability from overseas visitor networks has not been verified in this pass.
