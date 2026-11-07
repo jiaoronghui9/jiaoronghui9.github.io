@@ -2,85 +2,84 @@
 Date: 2026-11-07
 Branch: `phase2-verified-content-20261107`
 Base: `main` at `fef1ba43d5fae6a4368ac51dfb9dbdda70924a26`
+Revision: supplier-source basis updated to Maquan + Ruitai; public pages show approximate ranges only.
 
-## 1. Source files actually inspected
+## 1. Original supplier sources inspected
 
 | Supplier / source | Original file | Pages / sections read | Use in this revision |
 |---|---|---|---|
-| Maquan | `茂泉净水材料.PDF` (34-page scanned PDF) | pp. 8, 10, 11, 13, 15–17, 24, 26; page images rendered and OCR reviewed | PAC, PAFC, PFS, APAM/CPAM/NPAM, sodium acetate trihydrate, coal-based activated carbon |
-| Boyang | `博洋-聚合氯化铝MSDS(1).docx` | Full 9-page SDS | PAC safety information only; not a PAM TDS |
-| Boyang | `检测报告28%(1).pdf` | Batch report for PAC, batch 2026092101 | One 28% PAC batch only; not a standing specification and not PAM data |
-| Taixinchang / archive | Product selection and supplier-document index | Used to locate original files and identify missing supplier documents | Provenance and gap tracking only; not treated as manufacturer TDS |
+| Maquan | `茂泉净水材料.PDF` (34-page scanned PDF) | pp. 8, 10, 11, 13, 15–17, 24, 26; page images rendered and visually checked | PAC, PAFC, PFS, APAM/CPAM/NPAM, sodium acetate trihydrate, coal-based activated carbon |
+| Ruitai | `巩义市瑞泰供水材料有限公司说明书.pdf` (18-page PDF) | pp. 3–8 and 15; page images rendered and visually checked | APAM/CPAM/NPAM, PAC, PAFC, PFS, dedicated sodium hypochlorite specification, sodium acetate |
+| Ruitai catalogue | `供应链工厂产品目录_瑞泰供水_20260904.docx` | Full 3-page catalogue | Cross-check PAM grade ranges and product-list descriptions |
 
-**Boyang PAM gap:** The indexed Boyang supplier folder currently contains the PAC MSDS and a PAC batch inspection report. No original Boyang APAM/CPAM/NPAM TDS or product specification was found in that folder during this pass. The public PAM ranges below are therefore based on the Maquan original brochure as approximate envelopes, not falsely attributed to Boyang. Obtain/locate Boyang's original PAM specification before presenting a Boyang-specific range.
+The public website does not name suppliers or disclose supplier product codes. The ranges below are portfolio-level indicative envelopes, not a statement that one supplier or one grade covers the entire range.
 
-## 2. Parameter evidence table
+## 2. Parameter evidence and public display
 
-| Product | Parameter | Source value / indicative envelope | Unit | Source / page | Public display decision |
-|---|---|---:|---|---|---|
-| PAC solid | Al₂O₃ | 20–30 | % | User-approved Taixinchang range; Maquan general solid PAC table p.8 reports ≥29% | Display 20–30% as the portfolio range; not six separate grades |
-| PAC solid | Basicity | 40–90 | % | Maquan p.8 and drinking-water PAC p.10 | Approximate range may be shown with grade caveat |
-| PAC solid | Water-insoluble matter | ≤0.6 | % | Maquan p.8 and p.10 | Approximate supplier reference only |
-| PAC solid | pH (10 g/L solution) | 3.5–5.0 | — | Maquan p.8 and p.10 | Approximate supplier reference only |
-| PAC liquid | Al₂O₃ | ≥10 | % | Maquan p.8 and p.10 | Separate liquid PAC display; never infer from solid PAC |
-| PAC liquid | Basicity | 40–90 | % | Maquan p.8 and p.10 | Approximate range |
-| PAC liquid | Density (20°C) | ≥1.12 | g/cm³ | Maquan p.8 and p.10 | Supplier reference; final grade confirmation |
-| PAC liquid | Water-insoluble matter | ≤0.2 | % | Maquan p.8 and p.10 | Supplier reference |
-| PAC liquid | pH (10 g/L solution) | 3.5–5.0 | — | Maquan p.8 and p.10 | Supplier reference |
-| APAM | Molecular weight | Approx. 3–32 | million | Maquan p.15: descriptive text 300–2500 ten-thousands; technical table 800–3200 ten-thousands | Display approximate envelope only; note source-section conflict and confirm grade |
-| CPAM | Molecular weight | Approx. 4–32 | million | Maquan p.15: descriptive text 400–1500 ten-thousands; technical table 800–3200 ten-thousands | Display approximate envelope only; note source-section conflict and confirm grade |
-| NPAM | Molecular weight | Approx. 4–16 | million | Maquan p.16: descriptive text 400–1600 ten-thousands; technical table 500–1600 ten-thousands | Display approximate envelope only; note 4 vs 5 million lower-bound difference |
-| PFS liquid / solid | Total iron | Approx. 11 / 19 | % | Maquan p.13 | Show broad range 11–19%, with form-dependent caveat |
-| PFS | Basicity | 8–16 | % | Maquan p.13 | Approximate range |
-| PFS liquid / solid | Water-insoluble matter | ≤0.3 / ≤0.5 | % | Maquan p.13 | Form-dependent; not one universal value |
-| PFS | pH (1% aqueous solution) | 2.0–3.0 | — | Maquan p.13 | Approximate range |
-| PAFC liquid / solid | Al₂O₃ | 10 / 29 | % | Maquan p.11 | Broad envelope 10–29%, form-dependent |
-| PAFC liquid / solid | Fe₂O₃ | 1–2 / 3–6 | % | Maquan p.11 | Broad envelope 1–6%, form-dependent |
-| PAFC | Basicity | 60–95 | % | Maquan p.11 | Approximate range |
-| PAFC liquid / solid | Water-insoluble matter | ≤0.3 / ≤1.0 | % | Maquan p.11 | Form-dependent |
-| PAFC | pH (1% aqueous solution) | 3.5–4.5 | — | Maquan p.11 | Approximate range |
-| Coal-based activated carbon, granular | Iodine value | Approx. 900–1050 | mg/g | Maquan p.26, granular coal-based grades | Approximate range |
-| Coal-based activated carbon, granular | Methylene-blue adsorption | Approx. 150–200 | mg/g | Maquan p.26, granular coal-based grades | Approximate range |
-| Coal-based activated carbon, powdered | Iodine value | Approx. 900–1000 | mg/g | Maquan p.26, powdered coal-based grades | Keep form distinction in final quotation |
-| Coal-based activated carbon, powdered | Methylene-blue adsorption | Approx. 140–180 | mg/g | Maquan p.26, powdered coal-based grades | Keep form distinction in final quotation |
-| Sodium acetate | Product form | Sodium acetate trihydrate | — | Maquan p.24 | State hydrate form only; do not transfer reagent-grade assay figures to industrial grade |
-| Sodium hypochlorite | Concentration / technical limits | Not established from Maquan original pages reviewed | — | No matching sodium-hypochlorite technical table identified in Maquan brochure | Do not publish a numeric concentration or substitute algaecide / other disinfectant data |
+| Product | Parameter | Source evidence | Approximate public display / decision |
+|---|---|---|---|
+| PAC solid | Al₂O₃ | User-approved portfolio range 20–30%. Maquan p.8 and Ruitai p.4 general PAC tables show standard solid PAC at about 29% or above; they do not alone establish every 20–30% grade. | Display the approved portfolio range **20–30%**. Do not list six separate grades. Confirm the exact grade and supplier after inquiry. |
+| PAC solid | Basicity | Maquan pp.8, 10; Ruitai p.4: about 40–90%. | Display approx. **40–90%**. |
+| PAC solid | pH (10 g/L solution) | Maquan pp.8, 10; Ruitai p.4: about 3.5–5.0. | Display approx. **3.5–5.0**. |
+| PAC solid | Water-insoluble matter | Maquan p.8/p.10: up to about 0.6%; Ruitai p.4: up to about 0.5%. | Omitted from the public table to avoid presenting a supplier-specific limit as universal. |
+| PAC liquid | Al₂O₃ | Maquan pp.8, 10; Ruitai p.4: approx. 10% minimum. | Display **approx. 10%+**. Liquid PAC remains separate from solid PAC. |
+| PAC liquid | Basicity | Maquan pp.8, 10; Ruitai p.4: about 40–90%. | Display approx. **40–90%**. |
+| PAC liquid | pH (10 g/L solution) | Maquan pp.8, 10; Ruitai p.4: about 3.5–5.0. | Display approx. **3.5–5.0**. |
+| PAC liquid | Density / insoluble matter | Maquan and Ruitai show density around 1.12 g/cm³ and insoluble matter up to about 0.2%. | Omitted from the public page to keep the presentation to broad, application-led ranges. |
+| APAM | Molecular weight | Maquan p.15: descriptive text 300–2,500 ten-thousands; technical table 800–3,200 ten-thousands. Ruitai pp.3 and catalogue: grade range about 300–2,500 ten-thousands. | Display **approx. 3–32 million** as the combined outer envelope. Different suppliers/grades cover only part of the range. |
+| CPAM | Molecular weight | Maquan p.15: descriptive text 400–1,500 ten-thousands; technical table 800–3,200 ten-thousands. Ruitai p.3/catalogue: grades about 600–1,000 ten-thousands. | Display **approx. 4–32 million** as the combined outer envelope. Different suppliers/grades cover only part of the range. |
+| NPAM | Molecular weight | Maquan p.16: descriptive text 400–1,600 ten-thousands; technical table 500–1,600 ten-thousands. Ruitai p.4/catalogue: grades about 400–1,500 ten-thousands. | Display **approx. 4–16 million** as the combined outer envelope. Different suppliers/grades cover only part of the range. |
+| PFS liquid / solid | Total iron | Maquan p.13 and Ruitai p.6: about 11% liquid / 19% solid. | Display broad envelope **approx. 11–19%**, with form-dependent caveat. |
+| PFS | Basicity / pH | Maquan p.13 and Ruitai p.6: basicity about 8–16%; pH about 2–3. | Display approx. **8–16%** and **2–3**. |
+| PAFC liquid / solid | Al₂O₃ / Fe₂O₃ | Maquan p.11: Al₂O₃ about 10% liquid / 29% solid; Fe₂O₃ about 1–2% liquid / 3–6% solid. Ruitai p.5: Al₂O₃ about 10% liquid / 27–29% solid; Fe₂O₃ about 1–4%. | Display broad envelopes **Al₂O₃ approx. 10–29%** and **Fe₂O₃ approx. 1–6%**, with form-dependent caveat. |
+| PAFC | Basicity | Maquan p.11 and Ruitai p.5: about 60–95%. | Display approx. **60–95%**. |
+| Coal-based activated carbon | Iodine value / methylene-blue adsorption | Maquan p.26: across listed coal-based particle grades, iodine value about 700–1,050 mg/g; methylene-blue adsorption about 100–200 mg/g. | Display approx. **700–1,050 mg/g** and **100–200 mg/g**; actual values depend on particle grade. |
+| Coal-based activated carbon | Ash / moisture | Maquan p.26: ash limits vary about 8–18%; moisture about 5–10% across grades. | Display as broad grade-dependent limits only. |
+| Sodium acetate | Product form / assay | Maquan p.24 identifies sodium acetate trihydrate with hydrate-content grades around 98–99.5%. Ruitai p.15 shows a bag marked 58–60%; the nearby technical table and assay basis do not align clearly enough to combine directly. | Public page states hydrate form and grade-dependent assay only. **No single combined numeric range is published** until assay basis and grade are confirmed. |
+| Sodium hypochlorite | Available chlorine | Ruitai p.8 is a dedicated sodium hypochlorite specification: three grades at about 5%, 10% and 13% available chlorine. | Display **approx. 5–13% available chlorine**, grade-dependent. This value is from the dedicated sodium hypochlorite page, not from algaecide or another disinfectant table. |
 
-## 3. Important source limitations
+## 3. PAM range conversion and limitations
 
-1. Maquan's APAM and CPAM descriptive text differs from the corresponding technical tables. The displayed ranges are outer indicative envelopes converted from the source's ten-thousands unit; they are not an unconditional supply guarantee.
-2. NPAM's Maquan descriptive text begins at 400 ten-thousands while its technical table begins at 500 ten-thousands. The page uses an approximate 4–16 million envelope and discloses the difference.
-3. No Boyang PAM TDS was located in the currently indexed Boyang folder. Do not describe the above PAM ranges as a Boyang-confirmed range.
-4. PFS and PAFC values differ by liquid/solid form. The site shows broad envelopes only and notes form-dependent limits.
-5. Maquan p.24 concerns sodium acetate trihydrate and includes reagent-grade analytical limits. Those assay figures are not transferred to the industrial product without matching grade and assay-basis confirmation.
-6. No sodium-hypochlorite concentration is published without a matching product specification.
-7. No batch COA, certificate, manufacturer identity, price, MOQ, stock status, packaging, or delivery time is inferred from a general brochure.
+The supplier tables use the Chinese unit `万` (ten-thousands). The public ranges are converted to millions:
+- APAM: approx. 300–3,200 ten-thousands = **3–32 million**.
+- CPAM: approx. 400–3,200 ten-thousands = **4–32 million**.
+- NPAM: approx. 400–1,600 ten-thousands = **4–16 million**.
 
-## 4. Six-page change scope
+These are broad envelopes compiled across the two suppliers' descriptive text and technical tables. They must not be represented as a single grade, a single supplier's full range, or guaranteed stock. Exact molecular weight, ionicity/hydrolysis parameters and current availability are confirmed against the selected grade after the customer inquiry.
+
+## 4. Important source limitations
+
+1. Maquan's APAM and CPAM descriptive text differs from its technical table. The website uses the broad combined envelope with an explicit grade caveat rather than selecting one table and presenting it as universal.
+2. NPAM's lower bound differs between Maquan's descriptive text and technical table; Ruitai's product grades support the broader approximate 4–16 million envelope.
+3. PAC solid's approved 20–30% is a Taixinchang portfolio display range. The general PAC tables in Maquan and Ruitai show standard solid PAC around 29% or above; do not attribute the full 20–30% range to either supplier individually.
+4. PFS and PAFC values differ by liquid/solid form. The website shows broad envelopes only.
+5. Sodium acetate assay figures are not combined because the Maquan trihydrate assay and Ruitai's 58–60% listing do not establish a clearly common assay basis.
+6. Sodium hypochlorite's 5–13% range comes from Ruitai's dedicated sodium hypochlorite specification page. No algaecide or unrelated disinfectant table was used as a substitute.
+7. No batch COA, certification, manufacturer identity, price, MOQ, stock status, packaging, or delivery time is inferred from a general brochure.
+
+## 5. Six-page change scope
 
 | Page | Change |
 |---|---|
-| `index.html` | Reframed company as trading/sourcing partner; PAC 20–30%; broad product parameter table; PAC/PAM navigation; documentation and order-confirmation caveats; removed unverified prices and factory/stock/sample/lead-time promises |
-| `polyaluminum-chloride-powder.html` | PAC solid 20–30% Al₂O₃; indicative Maquan general PAC ranges; grade and application caveat |
-| `polyaluminum-chloride-liquid.html` | Separate liquid PAC parameter system; no solid PAC carry-over |
-| `anionic-polyacrylamide.html` | APAM approximate 3–32 million envelope; source conflict and Boyang TDS gap disclosed |
-| `cationic-polyacrylamide.html` | CPAM approximate 4–32 million envelope; source conflict and Boyang TDS gap disclosed |
-| `nonionic-polyacrylamide.html` | NPAM approximate 4–16 million envelope; source lower-bound difference disclosed |
+| `index.html` | Trading/sourcing company positioning; product overview; PAC 20–30%; broad ranges for PAC/PAM/PFS/PAFC/activated carbon/sodium hypochlorite; sodium acetate assay basis left for confirmation; removed unsupported commercial promises |
+| `polyaluminum-chloride-powder.html` | PAC solid 20–30% Al₂O₃; approximate basicity and pH; no supplier-specific insoluble-matter limit |
+| `polyaluminum-chloride-liquid.html` | Separate liquid PAC parameter system; approx. 10%+ Al₂O₃; no solid PAC carry-over |
+| `anionic-polyacrylamide.html` | APAM approximate 3–32 million envelope |
+| `cationic-polyacrylamide.html` | CPAM approximate 4–32 million envelope |
+| `nonionic-polyacrylamide.html` | NPAM approximate 4–16 million envelope |
 
-## 5. Not changed
+## 6. Not changed
 
 - Formal `main` branch.
 - PR #1.
-- Other five auxiliary product pages.
+- Other auxiliary product pages.
 - DNS, CNAME, GitHub Pages configuration, Zoho records and live website deployment.
 - Existing form action, destination mailbox and WhatsApp number.
 - Original supplier source files.
 
-## 6. Remaining checks before total acceptance
+## 7. Remaining checks before total acceptance
 
 - Inspect rendered desktop/mobile pages in a browser.
 - Check all six inquiry forms and their field content.
 - Check internal links and SEO metadata against the six-page scope.
-- Review the homepage parameter rows and remove any remaining unverified commercial claims.
-- Obtain Boyang PAM original TDS or current technical specification before attributing any range to Boyang.
-- Complete P0 live form delivery test separately; code inspection does not prove Zoho receipt.
+- Complete the P0 live form delivery test separately; source-code inspection does not prove Zoho receipt.
