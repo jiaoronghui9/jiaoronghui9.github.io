@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <meta name="google-site-verification" content="UPYlYq8oo-UXq80J-cEI3j82ZkbfGTGLD" />
 <meta name="language" content="English">
 <meta name="revisit-after" content="7 days">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://miaoda.feishu.cn; font-src https://miaoda.feishu.cn; script-src 'self' 'unsafe-inline' https://www.clarity.ms; connect-src 'self' https://www.clarity.ms https://*.clarity.ms wss://*.clarity.ms; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://*.clarity.ms https://c.bing.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline' https://*.clarity.ms; connect-src 'self' https://*.clarity.ms https://c.bing.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co">
 
 <!-- Open Graph / Social Media -->
 <meta property="og:type" content="website">
@@ -22,12 +22,12 @@
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Henan Taixinchang Trading Co., Ltd. | Water Treatment Chemicals Supply & Sourcing">
 <meta name="twitter:description" content="Trading and sourcing partner for PAC, PAM, PFS, PAFC, activated carbon, sodium acetate and other water-treatment chemicals. Product grade and specifications are matched to application and confirmed with selected suppliers.">
 
 <!-- Canonical URL -->
-<link rel="canonical" href="https://taixinchang.com">
+<link rel="canonical" href="https://taixinchang.com/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <!-- Structured Data (JSON-LD) -->
@@ -127,837 +127,16 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Playfair+Display:wght@400;600;700;800&family=Noto+Sans:wght@300;400;500;600;700&display=swap">
-<style>
-/* ===== Reset & Base ===== */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #1a2b3c;
-  background: #ffffff;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-img { max-width: 100%; display: block; }
-a { text-decoration: none; color: inherit; }
-ul { list-style: none; }
-
-/* ===== Color Tokens ===== */
-:root {
-  --primary: #0e4d64;
-  --primary-dark: #0a3a4c;
-  --accent: #00b4d8;
-  --accent-light: #90e0ef;
-  --cta: #e67e22;
-  --cta-hover: #d35400;
-  --bg-light: #f4f8fa;
-  --bg-dark: #0a2a38;
-  --text: #1a2b3c;
-  --text-light: #5a7a8c;
-  --border: #d8e4ea;
-  --white: #ffffff;
-}
-
-/* ===== Typography ===== */
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--primary);
-}
-h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
-h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 1rem; }
-h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
-p { color: var(--text-light); margin-bottom: 1rem; }
-
-/* ===== Layout ===== */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-section { padding: 80px 0; }
-.section-label {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 12px;
-}
-
-/* ===== Navigation ===== */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: rgba(255,255,255,0.97);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-  transition: all 0.3s ease;
-}
-.nav-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-}
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.logo-mark {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo-mark svg { width: 20px; height: 20px; fill: white; }
-.nav-links {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-}
-.nav-links a {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text);
-  transition: color 0.2s;
-}
-.nav-links a:hover { color: var(--accent); }
-.nav-cta {
-  background: var(--primary);
-  color: white !important;
-  padding: 10px 22px;
-  border-radius: 4px;
-  font-weight: 600 !important;
-  transition: background 0.2s;
-}
-.nav-cta:hover { background: var(--accent); }
-.mobile-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-}
-.mobile-toggle span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--primary);
-  margin: 5px 0;
-  transition: 0.3s;
-}
-
-/* ===== Hero ===== */
-.hero {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-top: 70px;
-  overflow: hidden;
-}
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(10,58,76,0.72), rgba(14,77,100,0.45)), url('images/hero.svg') center/cover no-repeat;
-  z-index: 0;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(10,42,56,0.92) 0%, rgba(14,77,100,0.75) 50%, rgba(14,77,100,0.6) 100%);
-  z-index: 1;
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-  color: white;
-}
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(0,180,216,0.15);
-  border: 1px solid rgba(0,180,216,0.4);
-  padding: 8px 18px;
-  border-radius: 30px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--accent-light);
-  margin-bottom: 24px;
-}
-.hero h1 {
-  color: white;
-  max-width: 700px;
-  margin-bottom: 20px;
-}
-.hero h1 span { color: var(--accent-light); }
-.hero-sub {
-  font-size: 1.15rem;
-  color: rgba(255,255,255,0.85);
-  max-width: 600px;
-  margin-bottom: 36px;
-  line-height: 1.7;
-}
-.hero-cta {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--cta);
-  color: white;
-  padding: 14px 32px;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.2s;
-  border: none;
-  cursor: pointer;
-}
-.btn-primary:hover { background: var(--cta-hover); transform: translateY(-2px); }
-.btn-outline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  color: white;
-  padding: 14px 32px;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 1rem;
-  border: 2px solid rgba(255,255,255,0.4);
-  transition: all 0.2s;
-  cursor: pointer;
-}
-.btn-outline:hover { border-color: white; background: rgba(255,255,255,0.1); }
-.hero-stats {
-  display: flex;
-  gap: 48px;
-  margin-top: 60px;
-  flex-wrap: wrap;
-}
-.stat-item { border-left: 3px solid var(--accent); padding-left: 16px; }
-.stat-number {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: white;
-}
-.stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
-
-/* ===== Wave Divider ===== */
-.wave-divider {
-  position: relative;
-  height: 60px;
-  background: var(--white);
-  margin-top: -60px;
-  z-index: 3;
-}
-.wave-divider svg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-}
-
-
-.product-img-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #eaf3f6, #f7fafb);
-  color: var(--primary);
-}
-.product-img-placeholder span {
-  max-width: 80%;
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.35;
-}
-.about-image-note {
-  min-height: 320px;
-  padding: 48px;
-  background: var(--bg-light);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.about-image-note h3 { font-size: 1.65rem; margin: 12px 0; }
-.about-image-note p { margin: 0 0 12px; }
-.about-image-note .note { font-size: 0.85rem; color: var(--text-light); }
-
-/* ===== Products Section ===== */
-.products { background: var(--bg-light); }
-.products-header {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 50px;
-}
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-.product-card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(14,77,100,0.08);
-  transition: all 0.3s ease;
-  border: 1px solid var(--border);
-}
-.product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(14,77,100,0.15);
-}
-.product-img {
-  height: 200px;
-  overflow: hidden;
-  background: var(--bg-light);
-}
-.product-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s;
-}
-.product-card:hover .product-img img { transform: scale(1.05); }
-.product-body { padding: 24px; }
-.product-tag {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--accent);
-  background: rgba(0,180,216,0.1);
-  padding: 4px 10px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-.product-body h3 { font-size: 1.15rem; margin-bottom: 8px; }
-.product-body p { font-size: 0.9rem; margin-bottom: 0; }
-.product-specs {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.spec-item { font-size: 0.8rem; color: var(--text-light); }
-.spec-item strong { color: var(--primary); }
-.product-price {
-  margin-top: 12px;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-.product-price .price-unit {
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--text-light);
-  margin-left: 6px;
-}
-
-/* ===== Specifications Section ===== */
-.specs { background: white; }
-.specs-tabs {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.spec-tab {
-  padding: 12px 28px;
-  border: 2px solid var(--border);
-  border-radius: 4px;
-  background: white;
-  color: var(--text);
-  font-weight: 600;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.spec-tab.active {
-  background: var(--primary);
-  color: white;
-  border-color: var(--primary);
-}
-.spec-tab:hover:not(.active) {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-.spec-content { display: none; }
-.spec-content.active { display: block; }
-.spec-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(14,77,100,0.08);
-}
-.spec-table th {
-  background: var(--primary);
-  color: white;
-  padding: 14px 16px;
-  text-align: left;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-.spec-table td {
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.9rem;
-  color: var(--text);
-}
-.spec-table tr:nth-child(even) { background: var(--bg-light); }
-.spec-table tr:hover { background: rgba(0,180,216,0.05); }
-
-/* ===== Applications Section ===== */
-.applications { background: var(--bg-light); }
-.app-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
-}
-.app-card {
-  background: white;
-  padding: 32px 24px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  transition: all 0.3s;
-}
-.app-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(14,77,100,0.12);
-}
-.app-icon {
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.app-icon svg { width: 28px; height: 28px; fill: white; }
-.app-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
-.app-card p { font-size: 0.88rem; margin-bottom: 0; }
-.app-products {
-  margin-top: 12px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.app-product-tag {
-  font-size: 0.75rem;
-  padding: 3px 10px;
-  background: rgba(0,180,216,0.1);
-  color: var(--accent);
-  border-radius: 3px;
-  font-weight: 500;
-}
-
-/* ===== Packaging Section ===== */
-.packaging { background: white; }
-.pack-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
-  margin-top: 40px;
-}
-.pack-card {
-  text-align: center;
-  padding: 40px 24px;
-  border: 2px solid var(--border);
-  border-radius: 8px;
-  transition: all 0.3s;
-}
-.pack-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-4px);
-}
-.pack-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pack-icon svg { width: 40px; height: 40px; fill: white; }
-.pack-card h3 { font-size: 1.2rem; margin-bottom: 12px; }
-.pack-card p { font-size: 0.9rem; margin-bottom: 8px; }
-.pack-detail {
-  font-size: 0.85rem;
-  color: var(--text-light);
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid var(--border);
-}
-
-/* ===== Certifications Section ===== */
-.certifications { background: var(--bg-light); }
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
-}
-.cert-card {
-  background: white;
-  padding: 32px 20px;
-  border-radius: 8px;
-  text-align: center;
-  border: 1px solid var(--border);
-  transition: all 0.3s;
-}
-.cert-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(14,77,100,0.12);
-}
-.cert-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 16px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cert-icon svg { width: 32px; height: 32px; fill: white; }
-.cert-card h4 { font-size: 1rem; margin-bottom: 8px; font-family: 'Noto Sans', sans-serif; }
-.cert-card p { font-size: 0.82rem; margin-bottom: 0; }
-
-/* ===== FAQ Section ===== */
-.faq { background: white; }
-.faq-list {
-  max-width: 800px;
-  margin: 40px auto 0;
-}
-.faq-item {
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  margin-bottom: 16px;
-  overflow: hidden;
-  transition: all 0.3s;
-}
-.faq-item:hover { border-color: var(--accent); }
-.faq-question {
-  padding: 20px 24px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--primary);
-  background: var(--bg-light);
-}
-.faq-question svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--accent);
-  transition: transform 0.3s;
-  flex-shrink: 0;
-}
-.faq-item.active .faq-question svg { transform: rotate(180deg); }
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-.faq-item.active .faq-answer { max-height: 300px; }
-.faq-answer-inner {
-  padding: 20px 24px;
-  font-size: 0.92rem;
-  color: var(--text-light);
-  line-height: 1.7;
-}
-
-/* ===== Why Us ===== */
-.why-us { background: white; }
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
-  margin-top: 50px;
-}
-.why-item {
-  text-align: center;
-  padding: 32px 24px;
-  border-radius: 8px;
-  transition: all 0.3s;
-}
-.why-item:hover { background: var(--bg-light); }
-.why-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 20px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.why-icon svg { width: 28px; height: 28px; fill: white; }
-.why-item h3 { font-size: 1.1rem; margin-bottom: 10px; }
-.why-item p { font-size: 0.9rem; margin-bottom: 0; }
-
-/* ===== About ===== */
-.about { background: var(--bg-light); }
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-.about-content h2 { margin-bottom: 20px; }
-.about-content p { margin-bottom: 16px; font-size: 0.95rem; }
-.about-list {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.about-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 0.95rem;
-  color: var(--text);
-}
-.about-list svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--accent);
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-.about-image {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 8px 32px rgba(14,77,100,0.15);
-}
-.about-image img { width: 100%; height: 400px; object-fit: cover; }
-
-/* ===== Contact ===== */
-.contact { background: var(--bg-dark); color: white; }
-.contact h2 { color: white; }
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  margin-top: 40px;
-}
-.contact-info h3 {
-  color: white;
-  font-size: 1.3rem;
-  margin-bottom: 24px;
-}
-.contact-item {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 24px;
-  align-items: flex-start;
-}
-.contact-icon {
-  width: 44px;
-  height: 44px;
-  background: rgba(0,180,216,0.15);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.contact-icon svg { width: 20px; height: 20px; fill: var(--accent); }
-.contact-item h4 { color: white; font-size: 0.95rem; margin-bottom: 4px; font-family: 'Noto Sans', sans-serif; font-weight: 600; }
-.contact-item p { color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 0; }
-.contact-form {
-  background: rgba(255,255,255,0.05);
-  padding: 32px;
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.1);
-}
-.form-group { margin-bottom: 20px; }
-.form-group label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: rgba(255,255,255,0.8);
-  margin-bottom: 8px;
-}
-.form-group input,
-.form-group textarea,
-.form-group select {
-  width: 100%;
-  padding: 12px 16px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 4px;
-  color: white;
-  font-size: 0.95rem;
-  font-family: inherit;
-  transition: border-color 0.2s;
-}
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-  outline: none;
-  border-color: var(--accent);
-}
-.form-group input::placeholder,
-.form-group textarea::placeholder { color: rgba(255,255,255,0.4); }
-.form-group textarea { resize: vertical; min-height: 100px; }
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.btn-submit {
-  width: 100%;
-  background: var(--cta);
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.btn-submit:hover { background: var(--cta-hover); }
-
-/* ===== Footer ===== */
-footer {
-  background: #061a24;
-  color: rgba(255,255,255,0.6);
-  padding: 40px 0 24px;
-  font-size: 0.85rem;
-}
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-.footer-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: white;
-}
-.footer-links { display: flex; gap: 24px; }
-.footer-links a { transition: color 0.2s; }
-.footer-links a:hover { color: var(--accent); }
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-  .mobile-toggle { display: block; }
-  .nav-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: white;
-    padding: 20px 24px;
-    border-bottom: 1px solid var(--border);
-    gap: 16px;
-  }
-  section { padding: 50px 0; }
-  .hero { min-height: auto; padding: 100px 0 60px; }
-  .hero-stats { gap: 24px; margin-top: 40px; }
-  .stat-number { font-size: 1.6rem; }
-  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-  .about-image img { height: 280px; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-inner { flex-direction: column; text-align: center; }
-  .spec-table { font-size: 0.8rem; }
-  .spec-table th, .spec-table td { padding: 8px 10px; }
-}
-
-/* ===== WhatsApp float & inline links (0922 optimization) ===== */
-.product-body h3 a { color: inherit; transition: color 0.2s; }
-.product-body h3 a:hover { color: var(--accent); }
-.contact-item a { color: var(--accent-light); transition: color 0.2s; }
-.contact-item a:hover { color: white; text-decoration: underline; }
-.wa-float {
-  position: fixed;
-  right: 22px;
-  bottom: 22px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #25d366;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 20px rgba(37,211,102,0.45);
-  z-index: 1200;
-  transition: transform 0.2s;
-}
-.wa-float:hover { transform: scale(1.08); }
-.wa-float svg { width: 32px; height: 32px; fill: #ffffff; }
-@media (max-width: 768px) {
-  .wa-float { width: 54px; height: 54px; right: 16px; bottom: 16px; }
-  .wa-float svg { width: 28px; height: 28px; }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 <!-- Microsoft Clarity analytics -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "yiyclz4nld");
-</script>
+<script src="analytics.js" defer></script>
+<script src="site.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <!-- ===== Navigation ===== -->
-<nav>
+<nav aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#" class="logo">
       <span class="logo-mark">
@@ -967,42 +146,21 @@ footer {
     </a>
     <div class="nav-links" id="navLinks">
       <a href="#products">Products</a>
-      <a href="#specs">Specs</a>
+      <a href="#guides">Selection Guides</a>
       <a href="#applications">Applications</a>
-      <a href="#packaging">Packaging</a>
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
       <a href="#contact" class="nav-cta">Get Quote</a>
     </div>
-    <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menu">
+    <button class="mobile-toggle" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
+<main id="main-content">
 
 <!-- ===== Hero ===== -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-badge">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/></svg>
-      Water Treatment Chemicals Supply &amp; Sourcing Partner
-    </div>
-    <h1>Water Treatment Chemicals, <span>Sourced Around Your Needs</span></h1>
-    <p class="hero-sub">Henan Taixinchang Trading Co., Ltd. is a trading and sourcing partner based in Gongyi, Henan, China. We coordinate product supply from multiple manufacturers in Gongyi, Jiaozuo and nearby areas, matching product grade and specifications to each customer's application and destination requirements.</p>
-    <div class="hero-cta">
-      <a href="#contact" class="btn-primary">Discuss Your Requirements</a>
-      <a href="#products" class="btn-outline">Explore Products</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-item"><div class="stat-number">20–30%</div><div class="stat-label">PAC Solid Al₂O₃ Range</div></div>
-      <div class="stat-item"><div class="stat-number">3 Series</div><div class="stat-label">PAM Products</div></div>
-      <div class="stat-item"><div class="stat-number">Multi-source</div><div class="stat-label">Supplier Network</div></div>
-      <div class="stat-item"><div class="stat-number">Application-led</div><div class="stat-label">Product Matching</div></div>
-    </div>
-  </div>
-</section>
+<section class="hero"><div class="hero-content hero-layout"><div class="hero-copy"><div class="hero-badge">Water Treatment Chemicals Supply &amp; Sourcing</div><h1>The right chemical starts with <span>your application.</span></h1><p class="hero-sub">PAC, PAM and supporting water-treatment materials, sourced through suppliers in Gongyi, Jiaozuo and nearby areas. Taixinchang coordinates grade selection, supplier communication and export requirements for your inquiry.</p><div class="hero-cta"><a href="#contact" class="btn-primary">Discuss Your Requirements <span aria-hidden="true">↗</span></a><a href="#products" class="btn-outline">Explore Products</a></div><ul class="hero-facts"><li>Based in Gongyi, Henan</li><li>Multi-supplier sourcing</li><li>Specifications confirmed by grade</li></ul></div><aside class="sourcing-panel" aria-labelledby="sourcing-title"><span class="panel-label">A practical sourcing process</span><h2 id="sourcing-title">From requirements<br>to a defined quotation.</h2><ol class="sourcing-steps"><li><span>01</span><div><h3>Tell us your process</h3><p>Product, application, quantity and destination.</p></div></li><li><span>02</span><div><h3>Review suitable grades</h3><p>Confirm supplier specifications and available documents.</p></div></li><li><span>03</span><div><h3>Confirm the order details</h3><p>Packaging, logistics and commercial terms for your order.</p></div></li></ol><p class="panel-note">A trading and sourcing partner in China.</p></aside></div></section>
 
 <!-- ===== Products ===== -->
 <section class="products" id="products">
@@ -1013,17 +171,18 @@ footer {
       <p>We coordinate sourcing across core coagulants, flocculants and supporting water-treatment materials. Exact grade, parameters, packaging and availability are confirmed for each inquiry.</p>
     </div>
     <div class="products-grid">
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>APAM</span></div><div class="product-body"><span class="product-tag">PAM Series</span><h3><a href="anionic-polyacrylamide.html">Anionic PAM (APAM)</a></h3><p>Anionic flocculant for wastewater treatment, mineral processing, metallurgy, papermaking and related industrial processes.</p><div class="product-specs"><span class="spec-item"><strong>MW:</strong> Approx. 3–32 million*</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>CPAM</span></div><div class="product-body"><span class="product-tag">PAM Series</span><h3><a href="cationic-polyacrylamide.html">Cationic PAM (CPAM)</a></h3><p>Cationic flocculant used in sludge dewatering, flotation and selected papermaking water-treatment processes.</p><div class="product-specs"><span class="spec-item"><strong>MW:</strong> Approx. 4–32 million*</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>NPAM</span></div><div class="product-body"><span class="product-tag">PAM Series</span><h3><a href="nonionic-polyacrylamide.html">Nonionic PAM (NPAM)</a></h3><p>Nonionic flocculant for selected wastewater, coal-washing and industrial applications.</p><div class="product-specs"><span class="spec-item"><strong>MW:</strong> Approx. 4–16 million*</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>PAC</span></div><div class="product-body"><span class="product-tag">PAC Series</span><h3><a href="polyaluminum-chloride-powder.html">PAC Solid (Powder)</a></h3><p>Solid polyaluminium chloride for drinking-water treatment and industrial wastewater applications, subject to grade selection.</p><div class="product-specs"><span class="spec-item"><strong>Al₂O₃:</strong> 20–30%</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>PAC LIQUID</span></div><div class="product-body"><span class="product-tag">PAC Series</span><h3><a href="polyaluminum-chloride-liquid.html">PAC Liquid</a></h3><p>Liquid polyaluminium chloride for water-treatment systems using liquid chemical dosing.</p><div class="product-specs"><span class="spec-item"><strong>Al₂O₃:</strong> Approx. 10%+ (liquid)</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>PFS</span></div><div class="product-body"><span class="product-tag">Coagulant</span><h3><a href="polyferric-sulfate.html">PFS (Polyferric Sulfate)</a></h3><p>Iron-based coagulant available in liquid and solid forms for water and wastewater treatment.</p><div class="product-specs"><span class="spec-item"><strong>Total Fe:</strong> Approx. 11–19%; basicity: 8–16%; pH: 2–3</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>ACTIVATED CARBON</span></div><div class="product-body"><span class="product-tag">Filter Media</span><h3><a href="coal-based-activated-carbon.html">Coal-based Activated Carbon</a></h3><p>Granular and powdered grades for water purification and selected industrial adsorption processes.</p><div class="product-specs"><span class="spec-item"><strong>Iodine value:</strong> Approx. 700–1,050 mg/g</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>SODIUM ACETATE</span></div><div class="product-body"><span class="product-tag">Carbon Source</span><h3><a href="sodium-acetate.html">Sodium Acetate</a></h3><p>Sodium acetate products, including trihydrate grades, for water-treatment and related industrial uses.</p><div class="product-specs"><span class="spec-item"><strong>Form:</strong> Grade-specific; confirm on inquiry</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>PAFC</span></div><div class="product-body"><span class="product-tag">Composite Coagulant</span><h3><a href="poly-aluminum-ferric-chloride.html">PAFC</a></h3><p>Aluminum- and iron-based composite coagulant for selected water and industrial wastewater treatment applications.</p><div class="product-specs"><span class="spec-item"><strong>Al₂O₃ / Fe₂O₃:</strong> Approx. 10–29% / 1–6%; basicity: 60–95%</span></div></div></div>
-      <div class="product-card"><div class="product-img product-img-placeholder" aria-hidden="true"><span>NaOCl</span></div><div class="product-body"><span class="product-tag">Disinfectant</span><h3><a href="sodium-hypochlorite.html">Sodium Hypochlorite</a></h3><p>Liquid disinfectant for water-treatment applications. Concentration and product requirements are confirmed for the selected grade.</p><div class="product-specs"><span class="spec-item"><strong>Available chlorine:</strong> Approx. 5–13%</span></div></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">APAM</div><div class="product-body"><span class="product-tag">PAM Series</span><h3><a href="anionic-polyacrylamide.html">Anionic PAM (APAM)</a></h3><p>Anionic flocculant for wastewater treatment, mineral processing, metallurgy, papermaking and related industrial processes.</p><div class="product-specs"><span class="spec-item"><strong>MW:</strong> Approx. 3–32 million*</span></div><a class="product-link" href="anionic-polyacrylamide.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">CPAM</div><div class="product-body"><span class="product-tag">PAM Series</span><h3><a href="cationic-polyacrylamide.html">Cationic PAM (CPAM)</a></h3><p>Cationic flocculant used in sludge dewatering, flotation and selected papermaking water-treatment processes.</p><div class="product-specs"><span class="spec-item"><strong>MW:</strong> Approx. 4–32 million*</span></div><a class="product-link" href="cationic-polyacrylamide.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">NPAM</div><div class="product-body"><span class="product-tag">PAM Series</span><h3><a href="nonionic-polyacrylamide.html">Nonionic PAM (NPAM)</a></h3><p>Nonionic flocculant for selected wastewater, coal-washing and industrial applications.</p><div class="product-specs"><span class="spec-item"><strong>MW:</strong> Approx. 4–16 million*</span></div><a class="product-link" href="nonionic-polyacrylamide.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">PAC</div><div class="product-body"><span class="product-tag">PAC Series</span><h3><a href="polyaluminum-chloride-powder.html">PAC Solid (Powder)</a></h3><p>Solid polyaluminium chloride for drinking-water treatment and industrial wastewater applications, subject to grade selection.</p><div class="product-specs"><span class="spec-item"><strong>Al₂O₃:</strong> 20–30%</span></div><a class="product-link" href="polyaluminum-chloride-powder.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">PAC LIQUID</div><div class="product-body"><span class="product-tag">PAC Series</span><h3><a href="polyaluminum-chloride-liquid.html">PAC Liquid</a></h3><p>Liquid polyaluminium chloride for water-treatment systems using liquid chemical dosing.</p><div class="product-specs"><span class="spec-item"><strong>Al₂O₃:</strong> Approx. 10%+ (liquid)</span></div><a class="product-link" href="polyaluminum-chloride-liquid.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">PFS</div><div class="product-body"><span class="product-tag">Coagulant</span><h3><a href="polyferric-sulfate.html">PFS (Polyferric Sulfate)</a></h3><p>Iron-based coagulant available in liquid and solid forms for water and wastewater treatment.</p><div class="product-specs"><span class="spec-item"><strong>Total Fe:</strong> Approx. 11% liquid / 19% solid</span></div><a class="product-link" href="polyferric-sulfate.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">ACTIVATED CARBON</div><div class="product-body"><span class="product-tag">Filter Media</span><h3><a href="coal-based-activated-carbon.html">Coal-based Activated Carbon</a></h3><p>Granular and powdered grades for water purification and selected industrial adsorption processes.</p><div class="product-specs"><span class="spec-item"><strong>Iodine value:</strong> Approx. 700–1,050 mg/g</span></div><a class="product-link" href="coal-based-activated-carbon.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">SODIUM ACETATE</div><div class="product-body"><span class="product-tag">Carbon Source</span><h3><a href="sodium-acetate.html">Sodium Acetate</a></h3><p>Sodium acetate products, including trihydrate grades, for water-treatment and related industrial uses.</p><div class="product-specs"><span class="spec-item"><strong>Form:</strong> Grade-specific; confirm on inquiry</span></div><a class="product-link" href="sodium-acetate.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">PAFC</div><div class="product-body"><span class="product-tag">Composite Coagulant</span><h3><a href="poly-aluminum-ferric-chloride.html">PAFC</a></h3><p>Aluminum- and iron-based composite coagulant for selected water and industrial wastewater treatment applications.</p><div class="product-specs"><span class="spec-item"><strong>Al₂O₃ / Fe₂O₃:</strong> Approx. 10–29% / 1–6%; basicity: 60–95%</span></div><a class="product-link" href="poly-aluminum-ferric-chloride.html">View product details <span aria-hidden="true">↗</span></a></div></div>
+      <div class="product-card"><div class="product-code" aria-hidden="true">NaOCl</div><div class="product-body"><span class="product-tag">Disinfectant</span><h3><a href="sodium-hypochlorite.html">Sodium Hypochlorite</a></h3><p>Liquid disinfectant for water-treatment applications. Concentration and product requirements are confirmed for the selected grade.</p><div class="product-specs"><span class="spec-item"><strong>Available chlorine:</strong> Approx. 5–13%</span></div><a class="product-link" href="sodium-hypochlorite.html">View product details <span aria-hidden="true">↗</span></a></div></div>
     </div>
+    <p class="range-note">* PAM molecular-weight ranges combine supplier literature across grades. They do not describe one grade or guarantee availability across the entire range.</p>
   </div>
 </section>
 
@@ -1035,21 +194,21 @@ footer {
       <h2>Indicative Product Parameters</h2>
       <p>These are broad reference ranges drawn from supplier product literature. They are not a single specification for every supplier, grade or batch.</p>
     </div>
-    <table class="spec-table">
-      <thead><tr><th>Product</th><th>Indicative parameters</th><th>Selection note</th></tr></thead>
+    <div class="table-scroll" role="region" aria-label="Product information table" tabindex="0"><table class="spec-table">
+      <thead><tr><th scope="col">Product</th><th scope="col">Indicative parameters</th><th scope="col">Selection note</th></tr></thead>
       <tbody>
         <tr><td>PAC Solid</td><td>Al₂O₃: 20–30%; basicity: approx. 40–90%; pH: approx. 3.5–5.0</td><td>Other limits vary by grade and production process.</td></tr>
         <tr><td>PAC Liquid</td><td>Al₂O₃: approx. 10%+; basicity: approx. 40–90%; pH: approx. 3.5–5.0</td><td>Liquid PAC parameters are separate from solid PAC.</td></tr>
         <tr><td>APAM</td><td>Approx. 3–32 million*</td><td>Combined approximate range from supplier product literature; exact grade and availability are confirmed with the selected supplier.</td></tr>
         <tr><td>CPAM</td><td>Approx. 4–32 million*</td><td>Combined approximate range from supplier product literature; ionicity and exact grade are confirmed with the selected supplier.</td></tr>
         <tr><td>NPAM</td><td>Molecular weight: approx. 4–16 million*</td><td>Combined approximate range from supplier product literature; exact grade is confirmed with the selected supplier.</td></tr>
-        <tr><td>PFS</td><td>Total iron: approx. 11–19%; basicity: approx. 8–16%; pH: approx. 2–3.</td><td>Liquid and solid grades have different limits.</td></tr>
-        <tr><td>PAFC</td><td>Al₂O₃: approx. 10–29%; Fe₂O₃: approx. 1–6%; basicity: approx. 60–95%.</td><td>Liquid and solid grades have different limits.</td></tr>
+        <tr><td>PFS</td><td>Total iron: approx. 11% liquid / 19% solid; basicity: approx. 8–16%; pH: approx. 2–3.</td><td>Liquid and solid grades have different limits.</td></tr>
+        <tr><td>PAFC</td><td>Al₂O₃: approx. 10% liquid / 27–29% solid; Fe₂O₃: approx. 1–4% liquid / 3–6% solid; basicity: approx. 60–95%.</td><td>Liquid and solid grades have different limits.</td></tr>
         <tr><td>Coal-based Activated Carbon</td><td>Iodine value: approx. 700–1,050 mg/g; methylene blue adsorption value: approx. 100–200 mg/g; ash: approx. ≤8–18%; moisture: approx. ≤5–10%, depending on particle grade.</td><td>Particle size and adsorption performance vary by grade.</td></tr>
         <tr><td>Sodium Acetate</td><td>Trihydrate form is listed; assay basis and grade are confirmed on inquiry.</td><td>Hydrate form and assay basis must be confirmed.</td></tr>
         <tr><td>Sodium Hypochlorite</td><td>Available chlorine: approx. 5–13%, depending on grade.</td><td>This range comes from the supplier's dedicated sodium hypochlorite specification; the selected grade and batch limits are confirmed on inquiry.</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p style="margin-top:18px;">*PAM molecular-weight ranges are approximate envelopes converted from the suppliers' '10,000' units. They summarize the combined ranges in supplier product literature; an individual supplier or grade may cover only part of the overall range. The exact molecular weight, charge/hydrolysis parameters and availability are confirmed for the selected supplier grade. Final product type, technical limits, packaging, documentation and price are confirmed after reviewing the customer's application, destination requirements and selected supplier.</p>
   </div>
 </section>
@@ -1238,20 +397,24 @@ footer {
   <div class="container">
     <div class="products-header"><span class="section-label">FAQ</span><h2>Frequently Asked Questions</h2><p>Common questions about selecting water-treatment chemicals for overseas projects.</p></div>
     <div class="faq-list">
-      <div class="faq-item active"><div class="faq-question" onclick="toggleFaq(this)">How do you select a suitable PAC grade?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></div><div class="faq-answer"><div class="faq-answer-inner">We first review the application, water characteristics, target Al₂O₃ content, destination requirements and any relevant standards. The specific PAC grade and supplier specification are then confirmed for the inquiry.</div></div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What is the difference between PAC powder and PAC liquid?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></div><div class="faq-answer"><div class="faq-answer-inner">They are different product forms with separate parameter and packaging systems. Liquid PAC specifications are not inferred from solid PAC. Tell us your dosing setup and consumption so we can review the appropriate form.</div></div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">How do I choose APAM, CPAM or NPAM?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></div><div class="faq-answer"><div class="faq-answer-inner">The choice depends on wastewater composition, suspended solids, sludge characteristics, pH and process conditions. Share your application and target molecular-weight requirements; the suitable supplier grade is confirmed before quotation.</div></div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Can you source products beyond PAC and PAM?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></div><div class="faq-answer"><div class="faq-answer-inner">We also coordinate sourcing for PFS, PAFC, coal-based activated carbon, sodium acetate, sodium hypochlorite and other water-treatment materials. Availability and specifications are checked for each inquiry.</div></div></div>
-      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What information should I include in an inquiry?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></div><div class="faq-answer"><div class="faq-answer-inner">Please share the product, application, approximate quantity, destination country or port, target specifications and packaging preference if known. If you are unsure about the grade, describe the water-treatment process and we can review the options.</div></div></div>
+      <details class="faq-item" open><summary class="faq-question">How do you select a suitable PAC grade?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary><div class="faq-answer"><div class="faq-answer-inner">We first review the application, water characteristics, target Al₂O₃ content, destination requirements and any relevant standards. The specific PAC grade and supplier specification are then confirmed for the inquiry.</div></div></details>
+      <details class="faq-item"><summary class="faq-question">What is the difference between PAC powder and PAC liquid?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary><div class="faq-answer"><div class="faq-answer-inner">They are different product forms with separate parameter and packaging systems. Liquid PAC specifications are not inferred from solid PAC. Tell us your dosing setup and consumption so we can review the appropriate form.</div></div></details>
+      <details class="faq-item"><summary class="faq-question">How do I choose APAM, CPAM or NPAM?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary><div class="faq-answer"><div class="faq-answer-inner">The choice depends on wastewater composition, suspended solids, sludge characteristics, pH and process conditions. Share your application and target molecular-weight requirements; the suitable supplier grade is confirmed before quotation.</div></div></details>
+      <details class="faq-item"><summary class="faq-question">Can you source products beyond PAC and PAM?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary><div class="faq-answer"><div class="faq-answer-inner">We also coordinate sourcing for PFS, PAFC, coal-based activated carbon, sodium acetate, sodium hypochlorite and other water-treatment materials. Availability and specifications are checked for each inquiry.</div></div></details>
+      <details class="faq-item"><summary class="faq-question">What information should I include in an inquiry?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary><div class="faq-answer"><div class="faq-answer-inner">Please share the product, application, approximate quantity, destination country or port, target specifications and packaging preference if known. If you are unsure about the grade, describe the water-treatment process and we can review the options.</div></div></details>
     </div>
   </div>
 </section>
+
+<section class="guides" id="guides"><div class="container"><div class="section-heading"><span class="section-label">Before you inquire</span><h2>A clearer starting point for product selection.</h2><p>Practical reading to help you describe your process and requirements.</p></div><div class="guide-grid"><a class="guide-card" href="pac-vs-pam-flocculant-selection.html"><span class="guide-index">01 / SELECTION GUIDE</span><h3>PAC or PAM? Start with the process.</h3><p>Understand the roles of coagulants and flocculants before selecting a grade.</p><span class="text-link">Read the guide <span aria-hidden="true">↗</span></span></a>
+<a class="guide-card" href="pac-dosage-calculation.html"><span class="guide-index">02 / SELECTION GUIDE</span><h3>Estimate PAC consumption.</h3><p>Turn a validated dose and daily flow into an indicative purchasing quantity.</p><span class="text-link">Read the guide <span aria-hidden="true">↗</span></span></a>
+<a class="guide-card" href="sodium-acetate-carbon-source-cost.html"><span class="guide-index">03 / SELECTION GUIDE</span><h3>Compare carbon-source requirements.</h3><p>Review product form, assay basis and practical cost factors.</p><span class="text-link">Read the guide <span aria-hidden="true">↗</span></span></a></div></div></section>
 
 <!-- ===== Contact ===== -->
 <section class="contact" id="contact">
   <div class="container">
     <span class="section-label" style="color: var(--accent-light);">Get In Touch</span>
-    <h2>Start Your One-Stop Water Treatment Sourcing Today</h2>
+    <h2>Tell Us What Your Process Needs</h2>
     <p style="color: rgba(255,255,255,0.7); max-width: 600px;">Tell us your water-treatment needs, target product and destination. We will review the requirements and confirm the suitable product options and quotation details.</p>
     <div class="contact-grid">
       <div class="contact-info">
@@ -1262,7 +425,7 @@ footer {
           </div>
           <div>
             <h4>Email</h4>
-            <p><span class="email-obf" data-p="sales" data-d="taixinchang.com"></span></p>
+            <p><a href="mailto:sales@taixinchang.com">sales@taixinchang.com</a></p>
           </div>
         </div>
         <div class="contact-item">
@@ -1296,34 +459,35 @@ footer {
       </div>
       <div class="contact-form">
         <form action="https://formsubmit.co/sales@taixinchang.com" method="POST">
+          <input type="hidden" name="source_page" value="https://taixinchang.com/">
           <input type="hidden" name="_subject" value="New Website Inquiry - taixinchang.com">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_next" value="https://taixinchang.com/thank-you.html">
           <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" style="display:none">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name *</label>
-              <input type="text" id="name" name="name" placeholder="John Smith" required>
+              <input type="text" id="name" name="name" placeholder="John Smith" required autocomplete="name">
             </div>
             <div class="form-group">
               <label for="company">Company</label>
-              <input type="text" id="company" name="company" placeholder="Your Company">
+              <input type="text" id="company" name="company" placeholder="Your Company" autocomplete="organization">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="email">Email *</label>
-              <input type="email" id="email" name="email" placeholder="john@company.com" required>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required autocomplete="email">
             </div>
             <div class="form-group">
-              <label for="country">Country</label>
-              <input type="text" id="country" name="country" placeholder="Vietnam / Indonesia">
+              <label for="country">Destination country / port</label>
+              <input type="text" id="country" name="country" placeholder="e.g. Vietnam / Ho Chi Minh City">
             </div>
           </div>
           <div class="form-group">
             <label for="product">Product of Interest</label>
-            <select id="product" name="product">
+            <select id="product" name="product" required>
               <option value="">Select a product</option>
               <option value="pac-powder">PAC Solid (Al₂O₃ 20–30%)</option>
               <option value="pac-liquid">PAC Liquid</option>
@@ -1337,13 +501,16 @@ footer {
               <option value="sodium-hypochlorite">Sodium Hypochlorite</option>
               <option value="multiple">Multiple Products / Mixed Container</option>
               <option value="other">Other</option>
+              <option value="not-sure">Please help me select a product</option>
             </select>
           </div>
+          <div class="form-row"><div class="form-group"><label for="application">Application</label><input type="text" id="application" name="application" placeholder="e.g. Industrial wastewater / sludge dewatering"></div><div class="form-group"><label for="quantity">Estimated quantity</label><input type="text" id="quantity" name="quantity" placeholder="e.g. 5 tons / month"></div></div>
           <div class="form-group">
             <label for="message">Message *</label>
-            <textarea id="message" name="message" placeholder="Tell us your requirements: monthly volume, specifications, target price..." required></textarea>
+            <textarea id="message" name="message" placeholder="Share target specifications, process conditions and packaging needs, if known." required></textarea>
           </div>
           <button type="submit" class="btn-submit">Send Inquiry</button>
+          <p class="form-help">Product availability, documents and quotation details are confirmed after reviewing your requirements. If the form does not complete, <a href="mailto:sales@taixinchang.com?subject=Website%20inquiry%3A%20index.html">email sales@taixinchang.com</a>.</p>
         </form>
       </div>
     </div>
@@ -1351,6 +518,7 @@ footer {
 </section>
 
 <!-- ===== Footer ===== -->
+</main>
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">Henan Taixinchang Trading Co., Ltd.</div>
@@ -1369,56 +537,6 @@ footer {
 <a class="wa-float" href="https://wa.me/8619937378850?text=Hello%2C%20I%27m%20interested%20in%20your%20water%20treatment%20chemicals%20(PAM%2FPAC)." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
   <svg viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
 </a>
-
-<script>
-// Mobile menu toggle
-function toggleMenu() {
-  document.getElementById('navLinks').classList.toggle('active');
-}
-
-// Close mobile menu when clicking a link
-document.querySelectorAll('.nav-links a').forEach(function(link) {
-  link.addEventListener('click', function() {
-    document.getElementById('navLinks').classList.remove('active');
-  });
-});
-
-// Specification tabs
-function switchSpec(tabId) {
-  document.querySelectorAll('.spec-tab').forEach(function(tab) {
-    tab.classList.remove('active');
-  });
-  document.querySelectorAll('.spec-content').forEach(function(content) {
-    content.classList.remove('active');
-  });
-  event.target.classList.add('active');
-  document.getElementById(tabId).classList.add('active');
-}
-
-// FAQ toggle
-function toggleFaq(element) {
-  var faqItem = element.parentElement;
-  faqItem.classList.toggle('active');
-}
-
-// Rebuild obfuscated email (anti-scraping)
-document.querySelectorAll('.email-obf').forEach(function(el) {
-  var addr = el.getAttribute('data-p') + '@' + el.getAttribute('data-d');
-  el.textContent = addr;
-});
-
-// Form is submitted via FormSubmit (server-side handler) — see form action attribute.
-
-// Navbar scroll effect
-window.addEventListener('scroll', function() {
-  var nav = document.querySelector('nav');
-  if (window.scrollY > 50) {
-    nav.style.boxShadow = '0 2px 20px rgba(14,77,100,0.1)';
-  } else {
-    nav.style.boxShadow = 'none';
-  }
-});
-</script>
 
 </body>
 </html>

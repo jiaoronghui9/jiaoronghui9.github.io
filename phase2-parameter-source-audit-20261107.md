@@ -1,4 +1,7 @@
 # Taixinchang Website Phase 2 — Parameter Source Audit
+
+> Historical snapshot notice (2026-11-18): the six-page QA below describes 2026-11-07, not the current candidate. Current image use, forms and browser checks are recorded in reports/phase2/01, 07, 08, 09 and 11. The old OG-image, homepage-image and sitemap-date observations are superseded; no supplier-source parameter audit was repeated.
+
 Date: 2026-11-07
 Branch: `phase2-verified-content-20261107`
 Base: `main` at `fef1ba43d5fae6a4368ac51dfb9dbdda70924a26`
