@@ -922,3 +922,25 @@ footer a:hover { text-decoration: underline; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* 2026-11-19: catalogue product range and reference photography */
+:where(.catalog-page) .catalog-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:24px; margin:28px 0; }
+:where(.catalog-page) .catalog-card { padding:28px; background:white; border:1px solid var(--border); border-top:3px solid #17748b; border-radius:8px; display:flex; flex-direction:column; gap:14px; }
+:where(.catalog-page) .catalog-card h3 { margin:0; font-size:1.45rem; }
+:where(.catalog-page) .catalog-card p { font-size:0.95rem; }
+:where(.catalog-page) .catalog-card .text-link { margin-top:auto; }
+:where(.catalog-page) .catalog-code { font-size:0.72rem; font-weight:700; letter-spacing:0.09em; color:#476879; }
+:where(.catalog-page) .catalog-note { max-width:900px; padding:18px 22px; background:#edf4f6; border-left:3px solid #17748b; font-size:0.9rem; }
+:where(.catalog-page) .catalog-photo { max-width:880px; margin:28px 0 0; }
+:where(.catalog-page) .catalog-photo img { display:block; width:100%; height:auto; max-height:510px; object-fit:contain; background:#edf2f4; border-radius:8px; }
+:where(.catalog-page) .catalog-photo figcaption { margin-top:12px; font-size:0.86rem; color:var(--text-light); line-height:1.7; }
+:where(.catalog-page) .specs h3 { margin-top:32px; }
+:where(.catalog-page) .spec-table th[scope="row"] { background:#f4f8fa; color:var(--text); text-align:left; }
+.contact-form p.market-note { margin-top:18px; font-size:0.83rem; color:#c3dce4; line-height:1.7; }
+@media(max-width:480px) { :where(.catalog-page) .catalog-card { padding:22px; } :where(.catalog-page) .catalog-note { padding:16px; } }
+
+:where(.catalog-page) .catalog-intro { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,380px); gap:36px; align-items:center; margin:24px 0; }
+:where(.catalog-page) .catalog-sample { margin:0; text-align:center; }
+:where(.catalog-page) .catalog-sample img { display:block; width:auto; max-width:100%; height:auto; max-height:280px; margin:0 auto; border-radius:8px; }
+:where(.catalog-page) .catalog-sample figcaption { margin-top:10px; font-size:0.8rem; line-height:1.6; color:var(--text-light); }
+@media(max-width:768px) { :where(.catalog-page) .catalog-intro { grid-template-columns:1fr; gap:20px; } }
