@@ -944,3 +944,8 @@ footer a:hover { text-decoration: underline; }
 :where(.catalog-page) .catalog-sample img { display:block; width:auto; max-width:100%; height:auto; max-height:280px; margin:0 auto; border-radius:8px; }
 :where(.catalog-page) .catalog-sample figcaption { margin-top:10px; font-size:0.8rem; line-height:1.6; color:var(--text-light); }
 @media(max-width:768px) { :where(.catalog-page) .catalog-intro { grid-template-columns:1fr; gap:20px; } }
+
+/* Homepage product photography: preserve aspect ratio without changing product tables. */
+#products .product-card .product-img { height: 200px; flex-shrink: 0; background: #f7f9fa; border-bottom: 1px solid var(--border); }
+#products .product-card .product-img img { display: block; width: 100%; height: 100%; object-fit: contain; }
+#products .product-image-note { margin-bottom: 0; }
